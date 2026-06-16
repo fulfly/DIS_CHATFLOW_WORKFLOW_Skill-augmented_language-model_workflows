@@ -48,7 +48,7 @@ The scripts are provided for transparency and partial reproducibility. Their exa
 
 - `scripts/process_uv_release.py`: processes UV absorbance or release-related input tables into relative-release or figure-ready CSV outputs.
 - `scripts/plot_fig3_model_metrics.py`: generates Figure 3-style model/skill metric summaries from model-output analyzer data.
-- `scripts/plot_fig5_uv_release.py`: optional target script name; the exact file is not included unless later copied from an approved real plotting script.
+- `scripts/plot_fig5_uv_release.py`: generates Fig. 5b UV release/time-course and related ratio plots from processed UV data.
 - `scripts/extract_blank_projected_area.py`: optional projected-area extraction for blank-formulation image/video-derived records.
 - `scripts/run_dis_chatflow_batch.py`: sanitized Dify Chatflow batch runner. It uses environment variables rather than hard-coded local paths or credentials.
 
@@ -140,3 +140,4 @@ The repository intentionally prioritizes a clean public structure over full-data
 - `repository_audit_report.md`
 
 If additional real data are later approved, copy them into the repository using stable English filenames and update the manifest. Never replace a missing real data file with synthetic data.
+

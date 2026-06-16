@@ -309,6 +309,7 @@
 "manifest_entry_exists","scripts/patch_chatflow_retries.py","copied","pass","Manifest entry has matching file."
 "manifest_entry_exists","scripts/plot_fig3_model_metrics.py","copied","pass","Manifest entry has matching file."
 "manifest_entry_exists","scripts/plot_fig3_model_metrics_2.py","copied","pass","Manifest entry has matching file."
+"manifest_entry_exists","scripts/plot_fig5_uv_release.py","copied","pass","Manifest entry has matching file."
 "manifest_entry_exists","scripts/plotting.py","copied","pass","Manifest entry has matching file."
 "manifest_entry_exists","scripts/process_uv_release.py","copied","pass","Manifest entry has matching file."
 "manifest_entry_exists","scripts/process_uv_release_2.py","copied","pass","Manifest entry has matching file."
