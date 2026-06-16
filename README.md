@@ -1,22 +1,33 @@
-# DIS-TOMO-MYGO
+# DIS_CHATFLOW_WORKFLOW_Skill-augmented_language-model_workflows
 
-GitHub-ready staging repository for a manuscript on skill-assisted language-model workflows for solid dosage-form disintegration visualization analysis and MYGO-guided sustained-release formulation optimization.
+This repository is the public staging package for a manuscript on skill-augmented language-model workflows for solid dosage-form disintegration visualization analysis and MYGO-guided sustained-release formulation optimization.
 
-This repository contains curated workflow exports, prompt modules, reusable skills, scripts, source/processed data, validation examples, and reproducibility notes. Copyrighted full-text literature, private logs, credentials, raw database storage, and large unreviewed image/video folders are intentionally excluded.
+The local working folder was assembled as `DIS-TOMO-MYGO`; the intended GitHub repository name is `DIS_CHATFLOW_WORKFLOW_Skill-augmented_language-model_workflows`.
 
-The repository was assembled from a reviewed local file inventory. See `repository_manifest.csv` for original-to-repository filename mapping, skipped/TODO entries, and release notes.
+## Repository Contents
 
-## Layout
-
-- `workflows/`: Dify workflow DSL files and workflow screenshots.
-- `prompts/`: DIS and MYGO/TOMO prompt modules.
-- `skills/`: reusable skill modules used by the workflows.
-- `scripts/`: batch execution, UV processing, plotting, and projected-area utilities.
-- `knowledge_base/`: documentation for retrieval/filtering and Markdown conversion workflows.
-- `source_data/` and `processed_data/`: curated source and derived data supporting manuscript figures.
-- `validation_data/` and `example_data/`: validation records and small examples.
+- `workflows/`: Dify DSL exports for DIS Chatflow and TOMO/MYGO Chatflow, screenshots, and node-level workflow notes.
+- `prompts/`: DIS and MYGO/TOMO prompt modules used by workflow branches.
+- `skills/`: reusable skill modules for background parsing, image analysis, mechanistic interpretation, final recommendation, and model-output batch analysis.
+- `scripts/`: batch execution, UV-release processing, figure plotting, projected-area extraction, and helper code needed for reproducibility.
+- `knowledge_base/`: public-safe documentation for OpenAlex filtering, OpenFDA field mapping, and OCR/Markdown conversion workflows.
+- `source_data/`: curated source tables or spreadsheet exports supporting manuscript figures.
+- `processed_data/`: derived CSV tables and figure-ready outputs generated from source data or workflow outputs.
+- `validation_data/`: sampled validation records, including flow-through image samples and UV absorbance spreadsheets.
+- `example_data/`: small example images and model/chatflow/skill outputs. These are examples, not the complete private dataset.
 - `docs/`: metric definitions and reproducibility notes.
+
+## Data Scope
+
+The repository intentionally contains public example/sampled data rather than the full private experimental dataset. Copyrighted full-text literature, converted full-text literature Markdown, raw database folders, API keys, private logs, and large unreviewed image/video folders are excluded.
+
+## Reproducibility Entry Points
+
+1. Review `repository_manifest.csv` for original-to-repository filename mapping and curation notes.
+2. Review `docs/reproducibility_notes.md` for the Python environment, expected inputs, and script-to-output mapping.
+3. Use `requirements.txt` for the top-level Python dependency set.
+4. Import the workflow DSL files from `workflows/` into Dify or inspect `workflows/node_descriptions.md` for a human-readable workflow map.
 
 ## Safety Notes
 
-Do not add API keys, Dify/OpenAI/Gemini/Qwen/Kimi keys, private logs, raw database files, or copyrighted full-text literature. Large image/video folders should be sampled or released separately after review.
+Do not add API keys, Dify/OpenAI/Gemini/Qwen/Kimi keys, private account logs, raw database storage, copyrighted full-text papers, or unreleased full image/video datasets to this repository.

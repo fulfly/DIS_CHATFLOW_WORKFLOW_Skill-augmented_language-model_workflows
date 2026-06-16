@@ -1,7 +1,12 @@
-﻿# Docs
+# Docs
 
-Metric definitions, reproducibility notes, and other manuscript-supporting documentation.
+This directory contains curated manuscript-supporting documentation.
 
-- skill_metric_definitions.md: metric definitions for analyzer and workflow quality/stability outputs.
-- eproducibility_notes.md: environment, script, data-scope, and workflow reproducibility notes.
+## Main Documents
 
+- `skill_metric_definitions.md`: definitions of coverage, consistency, quality, verdict, and model-output analysis metrics, based on the model-output batch analyzer documentation.
+- `reproducibility_notes.md`: Python environment notes, dependency summary, script-to-data mapping, and public-data scope notes.
+
+## Notes
+
+The full manuscript methods and results remain outside this repository. These documents provide enough context to inspect the public workflow package and rerun the included scripts on the sampled/source-equivalent data.
