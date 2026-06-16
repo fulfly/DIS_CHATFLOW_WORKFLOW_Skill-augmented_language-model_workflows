@@ -1,0 +1,4 @@
+﻿model_bucket,file_count,supported_count,mapped_model_label_count,avg_overall_quality_score_pct,avg_dimension_coverage_pct,avg_mechanism_score_pct,avg_reasoning_score_pct,avg_experiment_completeness_pct,verdict_same_rate_pct,placeholder_reference_rate_pct,avg_comparison_table_rows,repeat_group_count,complete_repeat_group_count,consistent_repeat_group_count,inconsistent_repeat_group_count,potential_false_positive_count,potential_false_negative_count,repeat_consistency_rate_pct,quality_rank
+slot_3,16,16,0,85.47,100.0,30.38,84.27,91.66,93.75,87.5,6.25,16,0,0,0,0,0,0.0,1
+slot_2,16,16,0,84.8,100.0,29.0,82.55,90.62,87.5,100.0,6.12,16,0,0,0,0,0,0.0,2
+slot_1,16,16,0,84.55,100.0,31.19,84.09,86.46,93.75,100.0,6.31,16,0,0,0,0,0,0.0,3

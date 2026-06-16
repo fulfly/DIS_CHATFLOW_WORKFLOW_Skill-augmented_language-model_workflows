@@ -1,0 +1,4 @@
+﻿group_type,group_value,same_count,different_count,unknown_count,total_count,same_ratio,different_ratio,unknown_ratio
+OVERALL,ALL,11,1,0,12,91.67,8.33,0.0
+MODEL_BUCKET,ChatGPT,11,1,0,12,91.67,8.33,0.0
+DRUG,硝苯地平控释片30mg,11,1,0,12,91.67,8.33,0.0

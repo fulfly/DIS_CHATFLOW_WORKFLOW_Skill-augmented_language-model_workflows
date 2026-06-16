@@ -1,0 +1,4 @@
+interface:
+  display_name: "Model Output Batch Analyzer"
+  short_description: "Offline batch comparison for local model result files."
+  default_prompt: "Use $model-output-batch-analyzer to scan a local result folder, extract structured findings, and generate comparison reports."

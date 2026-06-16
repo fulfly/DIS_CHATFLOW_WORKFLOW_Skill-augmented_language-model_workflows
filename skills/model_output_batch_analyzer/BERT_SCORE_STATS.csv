@@ -1,0 +1,4 @@
+﻿group_type,group_value,supported_count,bert_scored_count,bert_available_rate_pct,avg_bert_precision_pct,avg_bert_recall_pct,avg_bert_f1_pct,bert_status_summary
+OVERALL,ALL,12,0,0.0,0.0,0.0,0.0,no_reference:12
+MODEL_BUCKET,ChatGPT,12,0,0.0,0.0,0.0,0.0,no_reference:12
+DRUG,硝苯地平控释片30mg,12,0,0.0,0.0,0.0,0.0,no_reference:12

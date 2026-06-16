@@ -1,0 +1,5 @@
+﻿model_bucket,file_count,supported_count,mapped_model_label_count,avg_overall_quality_score_pct,avg_dimension_coverage_pct,avg_mechanism_score_pct,avg_reasoning_score_pct,avg_experiment_completeness_pct,verdict_same_rate_pct,placeholder_reference_rate_pct,avg_comparison_table_rows,quality_rank
+unassigned,2,2,0,84.59,100.0,40.0,57.3,100.0,0.0,0.0,3.5,1
+slot_2,85,85,0,84.08,100.0,32.18,84.85,83.13,80.0,82.35,6.28,2
+slot_3,85,85,0,84.01,100.0,30.45,84.38,84.51,81.18,90.59,6.36,3
+slot_1,86,86,0,83.78,100.0,30.05,84.98,83.14,84.88,94.19,6.29,4

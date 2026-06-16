@@ -1,0 +1,2 @@
+source_data_changed,raw_points_per_trace,plotted_points_per_trace,raw_points_per_hour,plotted_points_per_hour,downsample_interval_h,smoothing_applied,smoothing_method,smoothing_window_h,typical_smoothing_window_points,downsampling_method,x_axis_ticks,x_axis_max,right_side_padding_h
+False,145,73,6.0,3.0,0.3333333333333333,True,centered moving average,0.75,5,linear interpolation to regular grid after smoothing,"0,4,8,12,16,20,24",24.8,0.8

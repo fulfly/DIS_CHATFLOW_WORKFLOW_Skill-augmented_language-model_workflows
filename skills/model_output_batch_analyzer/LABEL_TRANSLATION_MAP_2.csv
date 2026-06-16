@@ -1,0 +1,37 @@
+label_type,original_label,english_display_label,notes
+drug_root,咪唑斯汀,Mizolastine,top-level folder label
+drug_root,地诺孕素,Dienogest,top-level folder label
+drug_root,替米沙坦,Telmisartan,top-level folder label
+drug_root,硝苯地平,Nifedipine,top-level folder label
+tablet,咪唑斯汀缓释片10mg,Mizolastine Sustained-Release Tablets 10 mg,translated dosage-form label
+tablet,地诺孕素片2mg,Dienogest Tablets 2 mg,translated dosage-form label
+tablet,替米沙坦片80mg,Telmisartan Tablets 80 mg,translated dosage-form label
+tablet,硝苯地平控释片30mg,Nifedipine Controlled-Release Tablets 30 mg,translated dosage-form label
+manufacturer,皿治林,Mizollen,brand/display label
+manufacturer,奥尼捷,Onijie,transliterated display label
+manufacturer,唯散宁,Visanne,brand/display label
+manufacturer,蒂诺安,Dinuoan,transliterated display label
+manufacturer,博律,Bolu,transliterated display label
+manufacturer,小仙片,Xiaoxianpian,transliterated display label
+manufacturer,紫竹,Zizhu,transliterated display label
+manufacturer,美卡素,Micardis / Meikasu,brand/transliterated display label
+manufacturer,安内强,An nei qiang,transliterated display label
+manufacturer,欧美宁,Oumeining,transliterated display label
+manufacturer,舒尼亚,Shuniya,transliterated display label
+manufacturer,毓乐宁,Yuelening,transliterated display label
+manufacturer,拜新同,Adalat / Baixintong,brand/transliterated display label
+manufacturer,奥赛定,Aosaiding,transliterated display label
+manufacturer,贝奇康,Beiqikang,transliterated display label
+manufacturer,得欣通,Dexintong,transliterated display label
+manufacturer,久保平,Jiubaoping,transliterated display label
+manufacturer,居安诺,Juannuo,transliterated display label
+manufacturer,君保泰,Junbaotai,transliterated display label
+manufacturer,立方,Lifang,transliterated display label
+manufacturer,奈特,Naite,transliterated display label
+manufacturer,赛新同,Saixintong,transliterated display label
+manufacturer,欣然,Xinran,transliterated display label
+manufacturer,欣适平,Xinshiping,transliterated display label
+manufacturer,亚宝,Yabao,company/display label
+manufacturer,一品红,Yipinhong,company/display label
+manufacturer,亿普,Yipu,transliterated display label
+manufacturer,易释,Yishi,transliterated display label

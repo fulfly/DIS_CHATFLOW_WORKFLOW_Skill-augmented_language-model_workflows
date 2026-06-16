@@ -1,0 +1,21 @@
+﻿group_type,group_value,file_count,supported_count,unsupported_count,verdict_same_count,verdict_different_count,verdict_unknown_count,avg_experiment_completeness_pct,avg_dimension_coverage_pct,avg_dimension_detail_score_pct,avg_mechanism_score_pct,avg_reasoning_score_pct,avg_structural_completeness_pct,avg_overall_quality_score_pct,comparison_table_rate_pct,reference_trace_rate_pct,placeholder_reference_rate_pct,repeat_group_count,complete_repeat_group_count,consistent_repeat_group_count,inconsistent_repeat_group_count,potential_false_positive_count,potential_false_negative_count,repeat_consistency_rate_pct,bert_scored_count,avg_bert_f1_pct
+OVERALL,ALL,70,70,0,38,22,10,0.0,84.46,46.46,0.0,0.0,42.86,30.29,0.0,0.0,0.0,25,21,11,9,3,6,55.0,0,0.0
+MODEL_BUCKET,ChatGPT,40,40,0,24,6,10,0.0,77.5,42.62,0.0,0.0,37.5,27.52,0.0,0.0,0.0,15,11,8,2,0,2,80.0,0,0.0
+MODEL_BUCKET,DeepSeek,30,30,0,14,16,0,0.0,93.75,51.56,0.0,0.0,50.0,33.98,0.0,0.0,0.0,10,10,3,7,3,4,30.0,0,0.0
+DRUG,硝苯地平控释片30mg,70,70,0,38,22,10,0.0,84.46,46.46,0.0,0.0,42.86,30.29,0.0,0.0,0.0,25,21,11,9,3,6,55.0,0,0.0
+MANUFACTURER_PAIR,拜新同 vs 一品红,6,6,0,4,2,0,0.0,95.83,52.71,0.0,0.0,45.83,33.95,0.0,0.0,0.0,2,2,0,2,0,2,0.0,0,0.0
+MANUFACTURER_PAIR,拜新同 vs 久保平,6,6,0,5,1,0,0.0,97.92,53.86,0.0,0.0,50.0,35.16,0.0,0.0,0.0,2,2,1,1,0,1,50.0,0,0.0
+MANUFACTURER_PAIR,拜新同 vs 亚宝,1,1,0,0,0,1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1,0,0,0,0,0,0.0,0,0.0
+MANUFACTURER_PAIR,拜新同 vs 亿普,2,2,0,0,0,2,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1,0,0,0,0,0,0.0,0,0.0
+MANUFACTURER_PAIR,拜新同 vs 君保泰,6,6,0,0,4,2,0.0,79.17,43.54,0.0,0.0,41.67,28.61,0.0,0.0,0.0,2,2,1,0,0,0,100.0,0,0.0
+MANUFACTURER_PAIR,拜新同 vs 奈特,6,6,0,5,1,0,0.0,95.83,52.71,0.0,0.0,50.0,34.57,0.0,0.0,0.0,2,2,1,1,0,1,50.0,0,0.0
+MANUFACTURER_PAIR,拜新同 vs 奥赛定,3,3,0,2,0,1,0.0,66.67,36.67,0.0,0.0,33.33,23.83,0.0,0.0,0.0,1,1,1,0,0,0,100.0,0,0.0
+MANUFACTURER_PAIR,拜新同 vs 居安诺,6,6,0,4,2,0,0.0,100.0,55.0,0.0,0.0,50.0,35.75,0.0,0.0,0.0,2,2,1,1,1,0,50.0,0,0.0
+MANUFACTURER_PAIR,拜新同 vs 得欣通,2,2,0,1,0,1,0.0,50.0,27.5,0.0,0.0,25.0,17.88,0.0,0.0,0.0,1,0,0,0,0,0,0.0,0,0.0
+MANUFACTURER_PAIR,拜新同 vs 易释,6,6,0,4,2,0,0.0,97.92,53.86,0.0,0.0,50.0,35.16,0.0,0.0,0.0,2,2,1,1,1,0,50.0,0,0.0
+MANUFACTURER_PAIR,拜新同 vs 欣然,6,6,0,1,5,0,0.0,95.83,52.71,0.0,0.0,45.83,33.95,0.0,0.0,0.0,2,2,1,1,1,0,50.0,0,0.0
+MANUFACTURER_PAIR,拜新同 vs 欣适平,6,6,0,5,1,0,0.0,95.83,52.71,0.0,0.0,50.0,34.57,0.0,0.0,0.0,2,2,1,1,0,1,50.0,0,0.0
+MANUFACTURER_PAIR,拜新同 vs 立方,6,6,0,3,3,0,0.0,95.83,52.71,0.0,0.0,50.0,34.57,0.0,0.0,0.0,2,2,2,0,0,0,100.0,0,0.0
+MANUFACTURER_PAIR,拜新同 vs 贝奇康,6,6,0,4,1,1,0.0,81.25,44.69,0.0,0.0,41.67,29.2,0.0,0.0,0.0,2,2,1,1,0,1,50.0,0,0.0
+MANUFACTURER_PAIR,拜新同 vs 赛新同,2,2,0,0,0,2,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1,0,0,0,0,0,0.0,0,0.0
+FORMAT,.md,70,70,0,38,22,10,0.0,84.46,46.46,0.0,0.0,42.86,30.29,0.0,0.0,0.0,0,0,0,0,0,0,0.0,0,0.0

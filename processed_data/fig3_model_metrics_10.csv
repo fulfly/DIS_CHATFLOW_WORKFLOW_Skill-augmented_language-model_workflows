@@ -1,0 +1,5 @@
+model,model_order,source_model_names,display_type,n_source_rows,aggregation_weight_column,aggregation_weight_sum,aggregation_method,plotted_value,avg_dimension_coverage_pct_source_column,avg_dimension_coverage_pct_source_values,row_excluded,panel
+GPT-5.5,0,ChatGPT,bar,1,mapped_model_label_count,48.0,single source row,100.0,avg_dimension_coverage_pct,100,False,a
+Qwen3.6-plus,1,Qwen,bar,1,mapped_model_label_count,45.0,single source row,47.22,avg_dimension_coverage_pct,47.22,False,a
+GLM-4.6V,2,GLM,bar,1,mapped_model_label_count,45.0,single source row,93.06,avg_dimension_coverage_pct,93.06,False,a
+Kimi-K2.5,3,Kimi,bar,1,mapped_model_label_count,35.0,single source row,63.56999999999999,avg_dimension_coverage_pct,63.57,False,a

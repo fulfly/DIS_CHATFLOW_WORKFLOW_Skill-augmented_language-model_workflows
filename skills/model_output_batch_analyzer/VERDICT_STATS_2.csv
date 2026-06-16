@@ -1,0 +1,6 @@
+﻿group_type,group_value,same_count,different_count,unknown_count,total_count,same_ratio,different_ratio,unknown_ratio
+OVERALL,ALL,44,4,0,48,91.67,8.33,0.0
+MODEL_BUCKET,slot_1,15,1,0,16,93.75,6.25,0.0
+MODEL_BUCKET,slot_2,14,2,0,16,87.5,12.5,0.0
+MODEL_BUCKET,slot_3,15,1,0,16,93.75,6.25,0.0
+DRUG,硝苯地平控释片30mg,44,4,0,48,91.67,8.33,0.0

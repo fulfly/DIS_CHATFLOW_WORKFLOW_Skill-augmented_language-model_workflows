@@ -1,0 +1,6 @@
+model_bucket,file_count,supported_count,mapped_model_label_count,avg_overall_quality_score_pct,source_model_label,model
+ChatGPT,48,48,48,84.94,ChatGPT,GPT-5.5
+GLM,45,45,45,32.53,GLM,GLM-4.6V
+Kimi,35,35,35,25.23,Kimi,Kimi-K2.5
+Qwen,45,45,45,18.51,Qwen,Qwen3.6-plus
+DIS GPT,16,16,16,29.92,DIS GPT,GPT-5.5

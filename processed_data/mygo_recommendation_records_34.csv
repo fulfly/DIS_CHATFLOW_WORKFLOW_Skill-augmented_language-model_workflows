@@ -1,0 +1,7 @@
+source_formulation_group,formulation_group,n_rows,n_replicates,missing_k4m,missing_k100lv,missing_relative_fraction,mean_relative_k4m_fraction,sd_relative_k4m_fraction,group_standardization_note
+gpt-5.4,GPT-5.4,3,3,0,0,0,0.6252354048964218,0.006523731855250013,source group standardized for Fig. 5a display
+Gemini 2.5 Flash,Gemini 2.5 Flash,1,1,0,0,0,0.5421686746987953,,
+Gemini 2.6 Flash,Gemini 2.5 Flash,1,1,0,0,0,0.5657003012048193,,source group standardized for Fig. 5a display
+Gemini 2.7 Flash,Gemini 2.5 Flash,1,1,0,0,0,0.5421686746987953,,source group standardized for Fig. 5a display
+qwen3.6-plus,Qwen,3,3,0,0,0,0.6080938106154118,0.03654119540358981,source group standardized for Fig. 5a display
+Standard,Standard,3,3,0,0,0,0.4716981132075471,6.798699777552591e-17,

@@ -1,0 +1,15 @@
+﻿primary_drug_label,primary_pH_label,model_bucket,same_count,different_count,unknown_count,total_count,same_ratio,different_ratio,unknown_ratio,repeat_group_count,inconsistent_repeat_group_count
+咪唑斯汀缓释片10mg,pH6.8,ALL,9,0,0,9,100.0,0.0,0.0,6,0
+地诺孕素片2mg,pH4.5,ALL,43,2,0,45,95.56,4.44,0.0,15,2
+替米沙坦片80mg,pH1.2,ALL,53,19,0,72,73.61,26.39,0.0,15,2
+硝苯地平控释片30mg,unknown,ALL,44,4,0,48,91.67,8.33,0.0,0,0
+咪唑斯汀缓释片10mg,pH6.8,slot_1,3,0,0,3,100.0,0.0,0.0,2,0
+地诺孕素片2mg,pH4.5,slot_1,15,0,0,15,100.0,0.0,0.0,5,0
+替米沙坦片80mg,pH1.2,slot_1,18,6,0,24,75.0,25.0,0.0,5,0
+咪唑斯汀缓释片10mg,pH6.8,slot_2,3,0,0,3,100.0,0.0,0.0,2,0
+地诺孕素片2mg,pH4.5,slot_2,15,0,0,15,100.0,0.0,0.0,5,0
+替米沙坦片80mg,pH1.2,slot_2,18,6,0,24,75.0,25.0,0.0,5,0
+咪唑斯汀缓释片10mg,pH6.8,slot_3,3,0,0,3,100.0,0.0,0.0,2,0
+地诺孕素片2mg,pH4.5,slot_3,13,2,0,15,86.67,13.33,0.0,5,2
+替米沙坦片80mg,pH1.2,slot_3,17,7,0,24,70.83,29.17,0.0,5,2
+硝苯地平控释片30mg,unknown,unassigned,44,4,0,48,91.67,8.33,0.0,0,0

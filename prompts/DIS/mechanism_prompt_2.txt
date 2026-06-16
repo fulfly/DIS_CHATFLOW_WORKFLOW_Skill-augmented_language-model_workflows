@@ -1,0 +1,150 @@
+---
+name: mechanism-summary-generator
+description: Generate branch-5 mechanistic analysis from phenomenon summaries and literature evidence. Use for router branch 5 (Mechanism analysis) while keeping router branch 4 dedicated to comparison.
+---
+
+# Mechanism Summary Generator
+
+## Scope
+
+Execute mechanism-level reasoning only. Do not produce A-versus-B final verdicts. Keep deterministic section assembly, size routing, assigners, and export in workflow.
+
+Router mapping (fixed):
+- Branch `5`: Mechanism analysis -> this skill
+- Branch `4`: Two-drug comparison -> `comparison-verdict-generator`
+
+## Inputs
+
+- `image_analyses` (object or array, required, must match `../_contracts/image_analysis.schema.json`)
+- `experiment_config` (object or JSON string, required)
+- `retrieved_literature_context` (array of string, required, may be empty)
+- `analysis_plan` (object/string, optional)
+
+## Output Contract
+
+- `mechanism_summary` must validate against `../_contracts/mechanism_summary.schema.json`
+- Schema supports two branches via `oneOf`:
+- `legacy_mechanism_summary_v1` (backward compatibility)
+- `structured_mechanistic_v2` (target emission)
+- `confidence` must remain in `[0,1]`
+- `additionalProperties` must remain `false`
+
+## Execution Rules
+
+1. Pre-validate each `image_analyses` item structure:
+- required keys: `group_id`, `time_h`, `eight_dimension_description`, `notes_for_later_summary`.
+2. Build phenomenon summary from image timeline:
+- Restate major observed patterns in one compact paragraph.
+- Include at least two concrete phenomena from the eight dimensions.
+3. Build literature-supported mechanism section:
+- Use only provided `retrieved_literature_context`.
+- Do not fabricate citation details.
+- If evidence is sparse, explicitly state limitation.
+4. Build reasoning chain explicitly:
+- `Observed phenomena -> possible formulation/process factors -> possible release behaviour`
+- Mark chain as hypothesis, not validated conclusion.
+5. Build validation suggestions:
+- Include at least two actionable checks (for example medium change, agitation change, comparative in-vitro study).
+6. Populate v2 output fields:
+- `phenomenon_review`
+- `literature_supported_typical_mechanisms`
+- `tentative_mechanistic_interpretation`
+- `mechanism_chain`
+- `suggestions_for_further_validation`
+- `hypothesis_disclaimer`
+- plus compatibility fields: `mechanism`, `drivers`, `counter_evidence`, `confidence`, `next_checks`
+7. Calculate `confidence` deterministically:
+- Start at `0.35`
+- Add `0.20` if at least two coherent timeline phenomena are identified
+- Add `0.20` if literature directly supports at least one mechanism link
+- Add `0.10` if counter-evidence is explicitly documented
+- Add `0.10` if interpretation references experiment conditions from `experiment_config`
+- Subtract `0.20` if literature evidence is weak/indirect
+- Clamp to `[0,1]`
+8. Validate schema before return.
+
+## Failure Payload (branch-scoped)
+
+```json
+{
+  "branch": "5",
+  "error_code": "ANALYSIS_INPUT_EMPTY | LITERATURE_EVIDENCE_MISSING | OUTPUT_NOT_JSON | SCHEMA_VALIDATION_FAILED",
+  "message": "string",
+  "failed_fields": ["string"]
+}
+```
+
+## Success Output Example
+
+```json
+{
+  "phenomenon_review": "Across timepoints, edge erosion and fragment dispersion increase while medium turbidity rises.",
+  "literature_supported_typical_mechanisms": [
+    "Hydrophilic polymer swelling can form a gel-like barrier that delays complete breakup.",
+    "Higher hydrophobic excipient proportion can slow medium penetration and prolong structural persistence."
+  ],
+  "tentative_mechanistic_interpretation": "Observed delayed breakup followed by accelerated fragmentation is consistent with an initial barrier-controlled phase followed by structural collapse.",
+  "mechanism_chain": {
+    "observed_phenomena": "Rising turbidity, progressive fragment emergence, and late-stage outline collapse.",
+    "possible_formulation_or_process_factors": "Polymer swelling behavior and hydrophobic/hydrophilic balance.",
+    "possible_release_behaviour": "Potential lag-like early phase followed by faster release after structural breakdown."
+  },
+  "suggestions_for_further_validation": [
+    "Repeat test with altered medium pH to probe swelling sensitivity.",
+    "Run comparative in-vitro dissolution profiles under different agitation settings."
+  ],
+  "hypothesis_disclaimer": "These interpretations are hypotheses derived from image phenomena plus literature patterns and are not validated causal conclusions.",
+  "mechanism": "Barrier-controlled early disintegration followed by collapse-driven fragmentation.",
+  "drivers": [
+    "Fragmentation and medium turbidity increase together over time",
+    "Physical-state transition from compact structure toward dispersed particles"
+  ],
+  "counter_evidence": [
+    "Some frames retain partial structural integrity at similar timepoints"
+  ],
+  "confidence": 0.72,
+  "next_checks": [
+    "Increase temporal sampling around the inferred transition window",
+    "Add replicate runs for late-stage variability confirmation"
+  ]
+}
+```
+
+## Minimal Invocation
+
+```json
+{
+  "skill": "mechanism-summary-generator",
+  "inputs": {
+    "image_analyses": {
+      "group_id": "A",
+      "time_range_h": [0.5, 1.0],
+      "time_h": 1.0,
+      "eight_dimension_description": {
+        "color_change": "Turbidity increased and color diffusion widened.",
+        "shape_change": "Outline partially collapsed with several detached fragments.",
+        "surface_texture_change": "Rougher surface with crack-like structures.",
+        "volume_change": "Occupied volume decreased after prior swelling trend.",
+        "dissolution_speed_time": "Current stage appears accelerated vs previous frame.",
+        "physical_state_change": "Structure transitions toward loose particulate mass.",
+        "dissolution_medium": "Medium becomes cloudier with visible streaking.",
+        "fragment_distribution_density": "Fragment density remains high near core with growing dispersion."
+      },
+      "notes_for_later_summary": "Critical change: fragmentation jump and turbidity rise."
+    },
+    "experiment_config": {
+      "drug_1_name": "Drug A",
+      "drug_2_name": null,
+      "medium_pH": "4.5",
+      "temperature_C": 37,
+      "total_duration_hours": 24.0,
+      "time_interval_hours": 1.0,
+      "other_conditions": ""
+    },
+    "retrieved_literature_context": ["Hydration-driven crack propagation"],
+    "analysis_plan": {
+      "dimensions": ["Color Change", "Shape Change", "Surface Texture Change", "Volume Change", "Dissolution Speed and Time", "Physical State Change", "Dissolution Medium", "Fragment Distribution with Density"]
+    }
+  }
+}
+```

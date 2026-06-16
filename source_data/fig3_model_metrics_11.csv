@@ -1,0 +1,6 @@
+model_bucket,file_count,supported_count,mapped_model_label_count,avg_overall_quality_score_pct,avg_dimension_coverage_pct,repeat_consistency_rate_pct
+ChatGPT,48,48,48,84.94,100.0,93.75
+GLM,45,45,45,32.53,93.06,50.0
+Kimi,35,35,35,25.23,63.57,33.33
+Qwen,45,45,45,18.51,47.22,20.0
+DIS GPT,16,16,16,29.92,98.44,0.0

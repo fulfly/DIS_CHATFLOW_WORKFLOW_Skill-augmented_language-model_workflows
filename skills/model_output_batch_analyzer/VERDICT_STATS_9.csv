@@ -1,0 +1,5 @@
+﻿group_type,group_value,same_count,different_count,unknown_count,total_count,same_ratio,different_ratio,unknown_ratio
+OVERALL,ALL,38,22,10,70,54.29,31.43,14.29
+MODEL_BUCKET,ChatGPT,24,6,10,40,60.0,15.0,25.0
+MODEL_BUCKET,DeepSeek,14,16,0,30,46.67,53.33,0.0
+DRUG,硝苯地平控释片30mg,38,22,10,70,54.29,31.43,14.29

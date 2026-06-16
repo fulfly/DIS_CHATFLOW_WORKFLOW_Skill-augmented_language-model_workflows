@@ -1,0 +1,1 @@
+model,model_display_name,drug,run_id,source_folder,source_file,source_id,comparison_id,color_change,shape_change,surface_texture_change,volume_change,dissolution_speed_time,physical_state_change,dissolution_medium,fragment_distribution_density,completed_dimensions,completion_rate,bertscore_f1,output_text,reference_type,notes

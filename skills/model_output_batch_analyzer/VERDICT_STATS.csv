@@ -1,0 +1,10 @@
+﻿group_type,group_value,same_count,different_count,unknown_count,total_count,same_ratio,different_ratio,unknown_ratio
+OVERALL,ALL,210,47,1,258,81.4,18.22,0.39
+MODEL_BUCKET,slot_1,73,13,0,86,84.88,15.12,0.0
+MODEL_BUCKET,slot_2,68,17,0,85,80.0,20.0,0.0
+MODEL_BUCKET,slot_3,69,16,0,85,81.18,18.82,0.0
+MODEL_BUCKET,unassigned,0,1,1,2,0.0,50.0,50.0
+DRUG,咪唑斯汀,9,0,0,9,100.0,0.0,0.0
+DRUG,地若孕素,44,2,0,46,95.65,4.35,0.0
+DRUG,替米沙坦,113,41,1,155,72.9,26.45,0.65
+DRUG,硝苯地平,44,4,0,48,91.67,8.33,0.0

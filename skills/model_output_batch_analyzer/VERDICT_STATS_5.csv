@@ -1,0 +1,8 @@
+﻿group_type,group_value,same_count,different_count,unknown_count,total_count,same_ratio,different_ratio,unknown_ratio
+OVERALL,ALL,77,57,55,189,40.74,30.16,29.1
+MODEL_BUCKET,ChatGPT,44,4,0,48,91.67,8.33,0.0
+MODEL_BUCKET,DIS GPT,0,0,16,16,0.0,0.0,100.0
+MODEL_BUCKET,GLM,8,11,26,45,17.78,24.44,57.78
+MODEL_BUCKET,Kimi,9,13,13,35,25.71,37.14,37.14
+MODEL_BUCKET,Qwen,16,29,0,45,35.56,64.44,0.0
+DRUG,硝苯地平控释片30mg,77,57,55,189,40.74,30.16,29.1

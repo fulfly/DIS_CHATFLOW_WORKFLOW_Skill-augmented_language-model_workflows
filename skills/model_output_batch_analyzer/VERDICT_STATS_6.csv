@@ -1,0 +1,8 @@
+﻿group_type,group_value,same_count,different_count,unknown_count,total_count,same_ratio,different_ratio,unknown_ratio
+OVERALL,ALL,96,6,0,102,94.12,5.88,0.0
+MODEL_BUCKET,slot_1,33,1,0,34,97.06,2.94,0.0
+MODEL_BUCKET,slot_2,32,2,0,34,94.12,5.88,0.0
+MODEL_BUCKET,slot_3,31,3,0,34,91.18,8.82,0.0
+DRUG,咪唑斯汀缓释片10mg,9,0,0,9,100.0,0.0,0.0
+DRUG,地诺孕素片2mg,43,2,0,45,95.56,4.44,0.0
+DRUG,硝苯地平控释片30mg,44,4,0,48,91.67,8.33,0.0

@@ -1,0 +1,13 @@
+source_file,parsing_status,detected_time_column,detected_absorbance_columns,missing_values,time_range_min,time_range_max,has_0h,baseline_added,covers_4h,covers_8h,negative_absorbance_values,excluded_reason,manual_mapping_used,include_for_fig5b
+0417-紫外-亚甲蓝-标准粘度.xlsx,auto_parsed,对应时间,吸光度|Unnamed: 4|Unnamed: 5,编号=0; 对应时间=0; 持续时间=0; 吸光度=0; Unnamed: 4=0; Unnamed: 5=0,0.5,24.0,False,True,True,True,0,,False,yes
+0421-紫外-亚甲蓝-标准粘度.xlsx,auto_parsed,对应时间,吸光度|Unnamed: 4|Unnamed: 5,编号=0; 对应时间=0; 持续时间=0; 吸光度=0; Unnamed: 4=0; Unnamed: 5=0,0.5,24.0,False,True,True,True,2,,False,yes
+0426-紫外-亚甲蓝-GPTs.xlsx,manual_mapping,对应时间,吸光度|Unnamed: 4|Unnamed: 5,编号=0; 对应时间=0; 持续时间=0; 吸光度=0; Unnamed: 4=0; Unnamed: 5=0,0.5,24.0,False,True,True,True,0,,True,yes
+0427-紫外-亚甲蓝-Gemini.xlsx,manual_mapping,对应时间,吸光度|Unnamed: 4|Unnamed: 5,编号=0; 对应时间=0; 持续时间=0; 吸光度=0; Unnamed: 4=0; Unnamed: 5=0,0.5,24.0,False,True,True,True,0,,True,yes
+0428-紫外-亚甲蓝-Qwen.xlsx,auto_parsed,对应时间,吸光度|Unnamed: 4|Unnamed: 5,编号=0; 对应时间=0; 持续时间=0; 吸光度=0; Unnamed: 4=0; Unnamed: 5=0,0.5,24.0,False,True,True,True,1,,False,yes
+0520-紫外-亚甲蓝-标准粘度.xlsx,auto_parsed,对应时间,吸光度|Unnamed: 4|Unnamed: 5,编号=0; 对应时间=0; 持续时间=0; 吸光度=0; Unnamed: 4=0; Unnamed: 5=0,0.5,8.0,False,True,True,True,0,,False,yes
+0523-紫外-亚甲蓝-GPTS.xlsx,auto_parsed,对应时间,吸光度|Unnamed: 4|Unnamed: 5,编号=0; 对应时间=0; 持续时间=0; 吸光度=0; Unnamed: 4=0; Unnamed: 5=0,0.5,8.0,False,True,True,True,0,,False,yes
+0524-紫外-亚甲蓝-Gemini.xlsx,auto_parsed,对应时间,吸光度|Unnamed: 4|Unnamed: 5,编号=0; 对应时间=0; 持续时间=0; 吸光度=0; Unnamed: 4=0; Unnamed: 5=0,0.5,8.0,False,True,True,True,0,,False,yes
+0524-紫外-亚甲蓝-GPTS.xlsx,auto_parsed,对应时间,吸光度|Unnamed: 4|Unnamed: 5,编号=0; 对应时间=0; 持续时间=0; 吸光度=0; Unnamed: 4=0; Unnamed: 5=0,0.5,8.0,False,True,True,True,0,,False,yes
+0525-紫外-亚甲蓝-Gemini.xlsx,auto_parsed,对应时间,吸光度|Unnamed: 4|Unnamed: 5,编号=0; 对应时间=0; 持续时间=0; 吸光度=0; Unnamed: 4=0; Unnamed: 5=0,0.5,8.0,False,True,True,True,0,,False,yes
+0525-紫外-亚甲蓝-Qwen.xlsx,auto_parsed,对应时间,吸光度|Unnamed: 4|Unnamed: 5,编号=0; 对应时间=0; 持续时间=0; 吸光度=0; Unnamed: 4=0; Unnamed: 5=0,0.5,8.0,False,True,True,True,0,,False,yes
+0526-紫外-亚甲蓝-Qwen.xlsx,auto_parsed,对应时间,吸光度|Unnamed: 4|Unnamed: 5,编号=0; 对应时间=0; 持续时间=0; 吸光度=0; Unnamed: 4=0; Unnamed: 5=0,0.5,8.0,False,True,True,True,0,,False,yes

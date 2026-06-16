@@ -1,0 +1,5 @@
+formulation_group,color_hex,display_type
+GPT-5.4,#3F7FBF,bar
+Qwen,#2A9DA8,bar
+Gemini 2.5 Flash,#6B5DBB,bar
+Standard,#303030,horizontal dashed reference line

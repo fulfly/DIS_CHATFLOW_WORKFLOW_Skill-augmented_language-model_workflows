@@ -1,0 +1,223 @@
+---
+name: comparison-verdict-generator
+description: Generate branch-4 two-drug comparison with robust same/different verdict based on mechanism pattern and time-course shape. Use for router branch 4 only.
+---
+
+# Comparison Verdict Generator
+
+## Scope
+
+Execute branch-4 comparison and final same/different verdict only. Keep full mechanistic authoring in branch 5.
+
+Router mapping (fixed):
+- Branch `4`: Two-drug comparison -> this skill
+- Branch `5`: Mechanism analysis -> `mechanism-summary-generator`
+
+## Inputs
+
+- `query_text` (string, required; used to identify target group pair like `Group A vs Group B`)
+- `image_analyses` (object or array, required, must match `../_contracts/image_analysis.schema.json`)
+- `experiment_config` (object or JSON string, required)
+- `mechanism_summary` (object, optional; supports v1/v2 from `../_contracts/mechanism_summary.schema.json`)
+
+## Output Contract
+
+- `comparison_table_with_verdict` must validate against `../_contracts/comparison_table_with_verdict.schema.json`
+- Target emission is v2 branch (`same`/`different` verdict).
+- Legacy v1 branch remains for backward compatibility.
+- `verdict` must be `same` or `different`.
+- `verdict_line` must be exactly `Verdict: same` or `Verdict: different`.
+- `confidence` must remain in `[0,1]`.
+- `additionalProperties` must remain `false`
+
+## Execution Rules
+
+1. Resolve comparison groups:
+- Parse explicit pair from `query_text` (for example `Group A vs Group B`).
+- Match using `group_id` in `image_analyses` (case-insensitive).
+- If unresolved or not exactly two comparable groups, fail with `GROUP_MAPPING_FAILED`.
+2. Build fixed eight dimensions in this order:
+- `color_change`
+- `shape_change`
+- `surface_texture_change`
+- `volume_change`
+- `dissolution_speed_time`
+- `physical_state_change`
+- `dissolution_medium`
+- `fragment_distribution_density`
+3. Sort each group by `time_h` (null times last). Build aligned comparison windows.
+4. Produce 8-row comparison evidence table:
+- Columns: `Dimension | Group A | Group B | Key Differences`.
+- Each row must summarize both groups and highlight key difference on that dimension.
+5. Extract key time-axis differences:
+- Identify transition timing differences (for example coating rupture, fragment surge, residue disappearance).
+6. Apply mandatory verdict rule (do not count dimension differences):
+- Prefer verdict basis on:
+  1) mechanism pattern consistency
+  2) time-course shape alignment
+- Same if ALL are true:
+  A) mechanism pattern consistent
+  B) key transitions in same order and timing broadly aligned
+  C) differences are intensity-level only
+- Different if ANY are true:
+  A) mechanism pattern differs qualitatively
+  B) time-course shape differs clearly
+  C) difference changes practical class label
+7. Timing tolerance rule for `same`:
+- Treat timing as aligned when difference is within about 1-2 sampling intervals OR within about 25-30 percent of total duration.
+- Use the more tolerant threshold when sampling is coarse.
+8. Uncertainty preference:
+- If uncertain and no explicit mechanism/shape difference evidence exists, prefer `same`.
+9. Release-impact note:
+- Add brief qualitative impact statement on release/exposure trend.
+- Do not over-speculate on PK.
+10. Build final v2 output fields:
+- `dimension_table`
+- `time_axis_key_differences`
+- `overall_summary`
+- `release_exposure_note`
+- `decision_basis`
+- `verdict`
+- `verdict_line`
+- `confidence`
+11. Confidence scoring:
+- Base `0.50`
+- Add `0.15` if both groups have sufficient timepoint coverage
+- Add `0.15` if mechanism pattern evidence is explicit
+- Add `0.10` if transition timing evidence is explicit
+- Subtract `0.20` if major missing windows exist
+- Clamp to `[0,1]`.
+12. Validate schema before return.
+
+## Failure Payload (branch-scoped)
+
+```json
+{
+  "branch": "4",
+  "error_code": "GROUP_MAPPING_FAILED | TIME_ALIGNMENT_FAILED | OUTPUT_NOT_JSON | SCHEMA_VALIDATION_FAILED",
+  "message": "string",
+  "failed_fields": ["string"]
+}
+```
+
+## Success Output Example
+
+```json
+{
+  "dimension_table": [
+    {
+      "dimension_display": "Color Change",
+      "dimension_key": "color_change",
+      "group_a": "Turbidity increases gradually.",
+      "group_b": "Turbidity rise is earlier and stronger.",
+      "key_differences": "Group B shows earlier clouding onset."
+    },
+    {
+      "dimension_display": "Shape Change",
+      "dimension_key": "shape_change",
+      "group_a": "Outline erosion appears mid-stage.",
+      "group_b": "Partial collapse appears earlier.",
+      "key_differences": "Collapse onset is earlier in Group B."
+    },
+    {
+      "dimension_display": "Surface Texture Change",
+      "dimension_key": "surface_texture_change",
+      "group_a": "Cracks appear progressively.",
+      "group_b": "Cracks and roughness intensify faster.",
+      "key_differences": "Roughening pace is higher in Group B."
+    },
+    {
+      "dimension_display": "Volume Change",
+      "dimension_key": "volume_change",
+      "group_a": "Volume decreases steadily.",
+      "group_b": "Swelling then faster collapse.",
+      "key_differences": "Group B shows stronger stage transition."
+    },
+    {
+      "dimension_display": "Disintegration / Dissolution Speed and Time",
+      "dimension_key": "dissolution_speed_time",
+      "group_a": "Speed increases gradually.",
+      "group_b": "Acceleration occurs earlier.",
+      "key_differences": "Earlier acceleration in Group B."
+    },
+    {
+      "dimension_display": "Physical State Change",
+      "dimension_key": "physical_state_change",
+      "group_a": "Solid to loose mass transition is slower.",
+      "group_b": "Transition to dispersed particles is faster.",
+      "key_differences": "Faster state transition in Group B."
+    },
+    {
+      "dimension_display": "Dissolution Medium",
+      "dimension_key": "dissolution_medium",
+      "group_a": "Cloudiness remains local for longer.",
+      "group_b": "Cloudiness diffuses earlier.",
+      "key_differences": "Earlier medium-wide diffusion in Group B."
+    },
+    {
+      "dimension_display": "Fragment Distribution with Density",
+      "dimension_key": "fragment_distribution_density",
+      "group_a": "Fragments remain more localized.",
+      "group_b": "Fragments disperse more widely.",
+      "key_differences": "Group B shifts to broad dispersion sooner."
+    }
+  ],
+  "time_axis_key_differences": [
+    "Large-scale fragment emergence occurs about one interval earlier in Group B.",
+    "Residual coherent core persists longer in Group A."
+  ],
+  "overall_summary": "Both groups share a similar broad mechanism pattern, but Group B reaches key transitions earlier with stronger intensity in multiple dimensions. The process order remains mostly aligned, suggesting similarity with meaningful pace differences.",
+  "release_exposure_note": "The earlier transition timing in Group B may indicate a relatively faster early release phase, while Group A may retain a slightly more persistent profile.",
+  "decision_basis": {
+    "mechanism_pattern_consistent": true,
+    "time_course_shape_aligned": true,
+    "differences_mainly_intensity": true,
+    "explicit_mechanism_difference": false,
+    "explicit_time_shape_difference": false,
+    "practical_label_changed": false,
+    "uncertainty_note": "Timing differences are within tolerance under current sampling granularity."
+  },
+  "verdict": "same",
+  "verdict_line": "Verdict: same",
+  "confidence": 0.79
+}
+```
+
+## Minimal Invocation
+
+```json
+{
+  "skill": "comparison-verdict-generator",
+  "inputs": {
+    "query_text": "Compare Group A vs Group B disintegration process.",
+    "experiment_config": {
+      "drug_1_name": "Drug A",
+      "drug_2_name": "Drug B",
+      "medium_pH": "4.5",
+      "temperature_C": 37,
+      "total_duration_hours": 24.0,
+      "time_interval_hours": 1.0,
+      "other_conditions": ""
+    },
+    "image_analyses": [
+      {
+        "group_id": "A",
+        "time_range_h": [0.5, 1.0],
+        "time_h": 1.0,
+        "eight_dimension_description": {
+          "color_change": "Slight turbidity increase near tablet.",
+          "shape_change": "Partial edge erosion with limited fragments.",
+          "surface_texture_change": "Moderately rough surface with small cracks.",
+          "volume_change": "Mild reduction in occupied volume.",
+          "dissolution_speed_time": "Progress appears steady without abrupt acceleration.",
+          "physical_state_change": "Mostly solid with partial loosening.",
+          "dissolution_medium": "Slight cloudiness with local streaks.",
+          "fragment_distribution_density": "Fragments remain locally concentrated."
+        },
+        "notes_for_later_summary": "Critical change is mild edge erosion."
+      }
+    ],
+    "mechanism_summary": {"mechanism": "Barrier-to-collapse transition mechanism", "drivers": ["Turbidity rise"], "counter_evidence": [], "confidence": 0.72, "next_checks": ["Increase temporal sampling"]}
+  }
+}
+```

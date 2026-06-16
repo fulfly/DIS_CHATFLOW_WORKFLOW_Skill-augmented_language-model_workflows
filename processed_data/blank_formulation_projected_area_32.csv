@@ -1,0 +1,10 @@
+formulation_code,formulation_group_fig4,pH_condition_fig4,n_videos,source_videos,replicate_status,statistical_test,reason
+01,01 high viscosity,pH 1.2,1,01-pH1.2T-亲水凝胶空白制剂-251217-Side-24h-750X-2.mp4,single video trace; SD not estimable,not run,one video per formulation x pH condition; SD/statistical comparison not estimable per condition
+01,01 high viscosity,pH 4.5,1,01-pH4.5T-亲水凝胶空白制剂-251217-Side-24h-750X-1.mp4,single video trace; SD not estimable,not run,one video per formulation x pH condition; SD/statistical comparison not estimable per condition
+01,01 high viscosity,pH 6.8,1,01-pH6.8T-亲水凝胶空白制剂-251217-Side-24h-750X-1.mp4,single video trace; SD not estimable,not run,one video per formulation x pH condition; SD/statistical comparison not estimable per condition
+02,02 low viscosity,pH 1.2,1,02-pH1.2T-亲水凝胶空白制剂-251217-Side-24h-750X-1.mp4,single video trace; SD not estimable,not run,one video per formulation x pH condition; SD/statistical comparison not estimable per condition
+02,02 low viscosity,pH 4.5,1,02-pH4.5T-亲水凝胶空白制剂-251217-Side-24h-750X-1.mp4,single video trace; SD not estimable,not run,one video per formulation x pH condition; SD/statistical comparison not estimable per condition
+02,02 low viscosity,pH 6.8,1,02-pH6.8T-亲水凝胶空白制剂-251217-Side-24h-750X-1.mp4,single video trace; SD not estimable,not run,one video per formulation x pH condition; SD/statistical comparison not estimable per condition
+03,03 standard viscosity,pH 1.2,1,03-pH1.2T-亲水凝胶空白制剂-251203-Side-24h-750X-2.mp4,single video trace; SD not estimable,not run,one video per formulation x pH condition; SD/statistical comparison not estimable per condition
+03,03 standard viscosity,pH 4.5,1,03-pH4.5T-亲水凝胶空白制剂-251203-Side-24h-750X-1.mp4,single video trace; SD not estimable,not run,one video per formulation x pH condition; SD/statistical comparison not estimable per condition
+03,03 standard viscosity,pH 6.8,1,03-pH6.8T-亲水凝胶空白制剂-251203-Side-24h-750X-1.mp4,single video trace; SD not estimable,not run,one video per formulation x pH condition; SD/statistical comparison not estimable per condition

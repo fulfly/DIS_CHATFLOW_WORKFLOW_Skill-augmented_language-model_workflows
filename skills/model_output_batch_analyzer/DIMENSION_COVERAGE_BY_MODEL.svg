@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="560" viewBox="0 0 960 560">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="480.0" y="42" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#1f2933">Eight-Dimension Coverage by Model</text>
+<text x="26" y="265.0" text-anchor="middle" transform="rotate(-90 26 265.0)" font-family="Arial, sans-serif" font-size="15" fill="#46515a">Average coverage (%)</text>
+<line x1="90" y1="450" x2="912" y2="450" stroke="#222" stroke-width="1.2"/>
+<line x1="90" y1="80" x2="90" y2="450" stroke="#222" stroke-width="1.2"/>
+<line x1="84" y1="450.00" x2="912" y2="450.00" stroke="#d9dee3" stroke-width="1"/>
+<text x="78" y="455.00" text-anchor="end" font-family="Arial, sans-serif" font-size="13" fill="#56616b">0</text>
+<line x1="84" y1="376.00" x2="912" y2="376.00" stroke="#d9dee3" stroke-width="1"/>
+<text x="78" y="381.00" text-anchor="end" font-family="Arial, sans-serif" font-size="13" fill="#56616b">20</text>
+<line x1="84" y1="302.00" x2="912" y2="302.00" stroke="#d9dee3" stroke-width="1"/>
+<text x="78" y="307.00" text-anchor="end" font-family="Arial, sans-serif" font-size="13" fill="#56616b">40</text>
+<line x1="84" y1="228.00" x2="912" y2="228.00" stroke="#d9dee3" stroke-width="1"/>
+<text x="78" y="233.00" text-anchor="end" font-family="Arial, sans-serif" font-size="13" fill="#56616b">60</text>
+<line x1="84" y1="154.00" x2="912" y2="154.00" stroke="#d9dee3" stroke-width="1"/>
+<text x="78" y="159.00" text-anchor="end" font-family="Arial, sans-serif" font-size="13" fill="#56616b">80</text>
+<line x1="84" y1="80.00" x2="912" y2="80.00" stroke="#d9dee3" stroke-width="1"/>
+<text x="78" y="85.00" text-anchor="end" font-family="Arial, sans-serif" font-size="13" fill="#56616b">100</text>
+<rect x="112.00" y="105.68" width="138.00" height="344.32" fill="#2f6f73" rx="4"/>
+<text x="181.00" y="95.68" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#1f2933">93.06%</text>
+<text x="181.00" y="478" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#1f2933">GLM</text>
+<rect x="272.00" y="214.79" width="138.00" height="235.21" fill="#c34f32" rx="4"/>
+<text x="341.00" y="204.79" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#1f2933">63.57%</text>
+<text x="341.00" y="478" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#1f2933">Kimi</text>
+<rect x="432.00" y="275.29" width="138.00" height="174.71" fill="#6b7f2a" rx="4"/>
+<text x="501.00" y="265.29" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#1f2933">47.22%</text>
+<text x="501.00" y="478" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#1f2933">Qwen</text>
+<rect x="592.00" y="80.00" width="138.00" height="370.00" fill="#465f91" rx="4"/>
+<text x="661.00" y="70.00" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#1f2933">100.00%</text>
+<text x="661.00" y="478" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#1f2933">ChatGPT</text>
+<rect x="752.00" y="85.77" width="138.00" height="364.23" fill="#9a6a28" rx="4"/>
+<text x="821.00" y="75.77" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#1f2933">98.44%</text>
+<text x="821.00" y="478" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#1f2933">DIS GPT</text>
+</svg>

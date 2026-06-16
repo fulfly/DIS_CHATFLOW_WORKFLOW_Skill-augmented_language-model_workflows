@@ -1,0 +1,5 @@
+model,model_order,source_model_names,display_type,n_source_rows,aggregation_weight_column,aggregation_weight_sum,aggregation_method,plotted_value,repeat_consistency_rate_pct_source_column,repeat_consistency_rate_pct_source_values,row_excluded,panel
+GPT-5.5,0,ChatGPT,bar,1,mapped_model_label_count,48.0,single source row,93.75,repeat_consistency_rate_pct,93.75,False,b
+Qwen3.6-plus,1,Qwen,bar,1,mapped_model_label_count,45.0,single source row,20.0,repeat_consistency_rate_pct,20,False,b
+GLM-4.6V,2,GLM,bar,1,mapped_model_label_count,45.0,single source row,50.0,repeat_consistency_rate_pct,50,False,b
+Kimi-K2.5,3,Kimi,bar,1,mapped_model_label_count,35.0,single source row,33.33,repeat_consistency_rate_pct,33.33,False,b

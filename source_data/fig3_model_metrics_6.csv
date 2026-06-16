@@ -1,0 +1,13 @@
+model,run_id,color_change,shape_change,surface_texture_change,volume_change,dissolution_speed_time,physical_state_change,dissolution_medium,fragment_distribution_density,bertscore_f1,output_text
+gpt-5-mini,run1,1,1,1,1,1,1,1,1,0.91,dummy nifedipine output gpt run one complete
+gpt-5-mini,run2,1,1,1,1,1,1,1,1,0.92,dummy nifedipine output gpt run two complete
+gpt-5-mini,run3,1,1,1,1,1,1,1,1,0.9,dummy nifedipine output gpt run three complete
+qwen3.6-plus,run1,1,1,1,1,1,1,1,1,0.88,dummy nifedipine output qwen run one complete
+qwen3.6-plus,run2,1,1,1,1,1,1,1,0,0.87,dummy nifedipine output qwen run two nearly complete
+qwen3.6-plus,run3,1,1,1,1,1,1,1,1,0.89,dummy nifedipine output qwen run three complete
+glm-4.6v,run1,1,1,1,1,1,1,0,1,0.84,dummy nifedipine output glm run one
+glm-4.6v,run2,1,1,1,1,1,1,1,1,0.85,dummy nifedipine output glm run two
+glm-4.6v,run3,1,1,1,0,1,1,1,1,0.83,dummy nifedipine output glm run three
+kimi-k2.5,run1,1,1,0,1,1,1,1,1,0.8,dummy nifedipine output kimi run one
+kimi-k2.5,run2,1,1,1,1,1,0,1,1,0.81,dummy nifedipine output kimi run two
+kimi-k2.5,run3,1,1,1,1,1,1,1,1,0.82,dummy nifedipine output kimi run three

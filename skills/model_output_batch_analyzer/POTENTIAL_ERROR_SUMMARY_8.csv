@@ -1,0 +1,9 @@
+﻿summary_scope,model_bucket,primary_drug_label,primary_pH_label,reference_manufacturer_label,manufacturer_label,manufacturer_pair,batch_pair,comparison_scope,repeat_group_total,complete_repeat_group_count,consistent_group_count,inconsistent_group_count,ambiguous_group_count,potential_false_positive_count,potential_false_negative_count,consistency_rate_pct,inconsistency_rate_pct
+ALL_MODELS,ALL,硝苯地平控释片30mg,unknown,拜新同,久保平,拜新同 vs 久保平,BJ86516 vs 22400938,cross_manufacturer,1,1,0,1,0,0,1,0.0,100.0
+ALL_MODELS,ALL,硝苯地平控释片30mg,unknown,拜新同,奈特,拜新同 vs 奈特,BJ86516 vs 240419111,cross_manufacturer,1,1,1,0,0,0,0,100.0,0.0
+ALL_MODELS,ALL,硝苯地平控释片30mg,unknown,拜新同,易释,拜新同 vs 易释,BJ86516 vs 2506K003,cross_manufacturer,1,1,1,0,0,0,0,100.0,0.0
+ALL_MODELS,ALL,硝苯地平控释片30mg,unknown,拜新同,欣适平,拜新同 vs 欣适平,BJ86516 vs 58,cross_manufacturer,1,1,1,0,0,0,0,100.0,0.0
+MODEL_BUCKET,ChatGPT,硝苯地平控释片30mg,unknown,拜新同,久保平,拜新同 vs 久保平,BJ86516 vs 22400938,cross_manufacturer,1,1,0,1,0,0,1,0.0,100.0
+MODEL_BUCKET,ChatGPT,硝苯地平控释片30mg,unknown,拜新同,奈特,拜新同 vs 奈特,BJ86516 vs 240419111,cross_manufacturer,1,1,1,0,0,0,0,100.0,0.0
+MODEL_BUCKET,ChatGPT,硝苯地平控释片30mg,unknown,拜新同,易释,拜新同 vs 易释,BJ86516 vs 2506K003,cross_manufacturer,1,1,1,0,0,0,0,100.0,0.0
+MODEL_BUCKET,ChatGPT,硝苯地平控释片30mg,unknown,拜新同,欣适平,拜新同 vs 欣适平,BJ86516 vs 58,cross_manufacturer,1,1,1,0,0,0,0,100.0,0.0

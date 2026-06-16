@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local secrets and logs
+.env
+.env.*
+*.log
+logs/
+
+# Office temp files
+~$*
+
+# Large/raw local artifacts
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
+*.wt
+*.sqlite
+*.db
+
+# Local outputs
+cache/
+tmp/
+.DS_Store
+Thumbs.db

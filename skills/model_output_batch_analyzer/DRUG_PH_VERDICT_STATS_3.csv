@@ -1,0 +1,6 @@
+﻿primary_drug_label,primary_pH_label,model_bucket,same_count,different_count,unknown_count,total_count,same_ratio,different_ratio,unknown_ratio,repeat_group_count,inconsistent_repeat_group_count
+硝苯地平控释片30mg,unknown,ALL,72,70,23,165,43.64,42.42,13.94,0,0
+硝苯地平控释片30mg,unknown,ChatGPT,24,6,10,40,60.0,15.0,25.0,0,0
+硝苯地平控释片30mg,unknown,DeepSeek,23,22,0,45,51.11,48.89,0.0,0,0
+硝苯地平控释片30mg,unknown,Kimi,9,13,13,35,25.71,37.14,37.14,0,0
+硝苯地平控释片30mg,unknown,Qwen,16,29,0,45,35.56,64.44,0.0,0,0

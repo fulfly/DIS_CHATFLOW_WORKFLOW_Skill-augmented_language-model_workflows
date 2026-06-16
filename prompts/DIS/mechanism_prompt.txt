@@ -1,0 +1,72 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "mechanism_summary",
+  "description": "Backward-compatible contract for mechanism summary. oneOf requires exactly one branch match.",
+  "oneOf": [
+    {
+      "title": "legacy_mechanism_summary_v1",
+      "type": "object",
+      "required": ["mechanism", "drivers", "counter_evidence", "confidence", "next_checks"],
+      "properties": {
+        "mechanism": {"type": "string"},
+        "drivers": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+        "counter_evidence": {"type": "array", "items": {"type": "string"}},
+        "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+        "next_checks": {"type": "array", "items": {"type": "string"}}
+      },
+      "additionalProperties": false
+    },
+    {
+      "title": "structured_mechanistic_v2",
+      "type": "object",
+      "required": [
+        "phenomenon_review",
+        "literature_supported_typical_mechanisms",
+        "tentative_mechanistic_interpretation",
+        "mechanism_chain",
+        "suggestions_for_further_validation",
+        "hypothesis_disclaimer",
+        "mechanism",
+        "drivers",
+        "counter_evidence",
+        "confidence",
+        "next_checks"
+      ],
+      "properties": {
+        "phenomenon_review": {"type": "string", "minLength": 1},
+        "literature_supported_typical_mechanisms": {
+          "type": "array",
+          "items": {"type": "string"},
+          "minItems": 1
+        },
+        "tentative_mechanistic_interpretation": {"type": "string", "minLength": 1},
+        "mechanism_chain": {
+          "type": "object",
+          "required": [
+            "observed_phenomena",
+            "possible_formulation_or_process_factors",
+            "possible_release_behaviour"
+          ],
+          "properties": {
+            "observed_phenomena": {"type": "string", "minLength": 1},
+            "possible_formulation_or_process_factors": {"type": "string", "minLength": 1},
+            "possible_release_behaviour": {"type": "string", "minLength": 1}
+          },
+          "additionalProperties": false
+        },
+        "suggestions_for_further_validation": {
+          "type": "array",
+          "items": {"type": "string"},
+          "minItems": 1
+        },
+        "hypothesis_disclaimer": {"type": "string", "minLength": 1},
+        "mechanism": {"type": "string", "minLength": 1},
+        "drivers": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+        "counter_evidence": {"type": "array", "items": {"type": "string"}},
+        "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+        "next_checks": {"type": "array", "items": {"type": "string"}, "minItems": 1}
+      },
+      "additionalProperties": false
+    }
+  ]
+}

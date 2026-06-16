@@ -1,0 +1,13 @@
+formulation_group,replicate_id,k4m_amount,k100lv_amount,k4m_k100lv_ratio
+Standard,std_1,2.5,2.8,
+Standard,std_2,2.5,2.8,
+Standard,std_3,2.5,2.8,
+gpt-5.4,gpt_1,2.052,3.2688,
+gpt-5.4,gpt_2,2.05,3.27,
+gpt-5.4,gpt_3,2.054,3.264,
+qwen3.6-plus,qwen_1,2.1,3.22,
+qwen3.6-plus,qwen_2,2.35,2.9708,
+qwen3.6-plus,qwen_3,2.1,3.2208,
+Gemini 2.5 Flash,gemini_1,2.3284,2.9924,
+Gemini 2.6 Flash,gemini_2,2.3785,2.9423,
+Gemini 2.7 Flash,gemini_3,2.0641,3.2536,

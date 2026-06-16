@@ -1,0 +1,203 @@
+---
+name: background-config-extractor
+description: Build branch-1 background payload as one strict JSON object containing experiment_config, drug_info, and analysis_plan. Use when parsing user-provided experimental setup while keeping user input as source of truth and retrieval as bounded supplement.
+---
+
+# Background Config Extractor
+
+## Scope
+
+Execute semantic extraction and planning only. Keep routing, markdown concatenation, size split, assigners, and export in workflow.
+
+## Inputs
+
+- `query_text` (string, required; user input is ground truth for experiment fields)
+- `retrieved_drug_context` (string/array, optional supplement for `drug_info` only)
+- `retrieved_method_context` (string/array, optional supplement for `analysis_plan` only)
+
+## Output Contract
+
+- Output must be one and only one parseable JSON object with top-level keys:
+- `experiment_config`
+- `drug_info`
+- `analysis_plan`
+- `experiment_config` must validate against `../_contracts/experiment_config.schema.json`.
+- `experiment_config` schema uses `oneOf`, so payload must match exactly one branch (legacy or new).
+- Current emission target is the new branch only (no dual-write).
+
+## Fixed Output Shape
+
+```json
+{
+  "experiment_config": {
+    "drug_1_name": null,
+    "drug_2_name": null,
+    "medium_pH": null,
+    "temperature_C": null,
+    "total_duration_hours": null,
+    "time_interval_hours": null,
+    "other_conditions": ""
+  },
+  "drug_info": {
+    "drug_1": {
+      "api": null,
+      "dosage_form": null,
+      "excipients": [],
+      "key_comments": ""
+    },
+    "drug_2": {
+      "api": null,
+      "dosage_form": null,
+      "excipients": [],
+      "key_comments": ""
+    }
+  },
+  "analysis_plan": {
+    "dimensions": [
+      "Color Change",
+      "Shape Change",
+      "Surface Texture Change",
+      "Volume Change",
+      "Dissolution Speed and Time",
+      "Physical State Change",
+      "Dissolution Medium",
+      "Fragment Distribution with Density"
+    ],
+    "single_drug_strategy": "",
+    "two_drug_comparison_strategy": ""
+  }
+}
+```
+
+## Source Priority (Mandatory)
+
+1. User input (`query_text`) decides experiment fields only.
+2. `retrieved_drug_context` supplements `drug_info` only.
+3. `retrieved_method_context` supplements `analysis_plan` only.
+4. Retrieval content must never overwrite user-stated experiment values.
+
+## Display-Key Mapping (Internal Rule, Not Output)
+
+- `Color Change -> color_change`
+- `Shape Change -> shape_change`
+- `Surface Texture Change -> surface_texture_change`
+- `Volume Change -> volume_change`
+- `Dissolution Speed and Time -> dissolution_speed_time`
+- `Physical State Change -> physical_state_change`
+- `Dissolution Medium -> dissolution_medium`
+- `Fragment Distribution with Density -> fragment_distribution_density`
+
+## Execution Rules
+
+1. Normalize inputs:
+- Trim whitespace.
+- Convert retrieval inputs to normalized text lists.
+2. Extract experiment fields from `query_text` only:
+- `drug_1_name`, `drug_2_name`
+- `medium_pH`
+- `temperature_C`
+- `total_duration_hours`
+- `time_interval_hours`
+- `other_conditions`
+3. Missing-value policy:
+- If user does not explicitly state a required experiment field, set it to `null`.
+- Keep `other_conditions` as `""` when truly absent.
+4. Weak inference boundary:
+- Allow unit conversion and term normalization only.
+- Do not apply common-sense defaults (for example, do not map room temperature to a number).
+5. Unit conversion:
+- `minutes -> hours` using `value / 60`.
+- Keep numeric outputs as numbers.
+6. Build `drug_info` with strict structure:
+- Must contain `drug_1` and `drug_2`.
+- Each must contain `api`, `dosage_form`, `excipients`, `key_comments`.
+- Fill missing values with `null` / `[]`.
+7. Retrieval match rule for `drug_info`:
+- Accept supplement only when case-insensitive name match or clear synonym match to user-stated drug name.
+- If not reliably matched, keep conservative null/empty values and add warning comment.
+8. Conflict rule:
+- If retrieval conflicts with user experiment fields, ignore retrieval conflict.
+- Append warning with format `WARN[CONFLICT_IGNORED]: ...` to `other_conditions` or `key_comments`.
+9. Build `analysis_plan`:
+- `dimensions` must be exactly the fixed eight display names above.
+- `single_drug_strategy` must use a template with timeline logic.
+- `two_drug_comparison_strategy` must use a template with axis-by-axis and key timepoint comparison logic.
+- `retrieved_method_context` may refine strategy wording but may not alter experiment fields.
+10. Partial success policy:
+- Return best-effort valid JSON with warnings when non-fatal issues occur.
+11. Fatal failure policy:
+- Return branch failure payload only when a parseable JSON object cannot be produced.
+
+## Failure Payload (branch-scoped)
+
+```json
+{
+  "branch": "1",
+  "error_code": "INPUT_MISSING | OUTPUT_NOT_JSON | SCHEMA_VALIDATION_FAILED",
+  "message": "string",
+  "failed_fields": ["string"]
+}
+```
+
+## Warning Annotation Format
+
+```json
+"WARN[CODE]: message"
+```
+
+## Minimal Invocation
+
+```json
+{
+  "skill": "background-config-extractor",
+  "inputs": {
+    "query_text": "Analyze aspirin tablet disintegration.",
+    "retrieved_drug_context": ["Aspirin immediate-release tablet"],
+    "retrieved_method_context": ["Timeline comparison guidance for static image disintegration analysis"]
+  }
+}
+```
+
+## Minimal Success Output Example
+
+```json
+{
+  "experiment_config": {
+    "drug_1_name": "Aspirin Tablet",
+    "drug_2_name": null,
+    "medium_pH": "4.5",
+    "temperature_C": 37,
+    "total_duration_hours": 1.0,
+    "time_interval_hours": 0.25,
+    "other_conditions": "USP basket; 900 mL"
+  },
+  "drug_info": {
+    "drug_1": {
+      "api": "Aspirin",
+      "dosage_form": "Tablet",
+      "excipients": ["Microcrystalline cellulose"],
+      "key_comments": ""
+    },
+    "drug_2": {
+      "api": null,
+      "dosage_form": null,
+      "excipients": [],
+      "key_comments": "WARN[NO_SECOND_DRUG]: User provided a single-drug setup."
+    }
+  },
+  "analysis_plan": {
+    "dimensions": [
+      "Color Change",
+      "Shape Change",
+      "Surface Texture Change",
+      "Volume Change",
+      "Dissolution Speed and Time",
+      "Physical State Change",
+      "Dissolution Medium",
+      "Fragment Distribution with Density"
+    ],
+    "single_drug_strategy": "Analyze each timepoint in chronological order, summarize per-dimension trend windows, then identify the critical transition point from previous frame.",
+    "two_drug_comparison_strategy": "Align Group A/B by nearest timepoint and compare all eight dimensions plus key transition timings before issuing similarity conclusion."
+  }
+}
+```

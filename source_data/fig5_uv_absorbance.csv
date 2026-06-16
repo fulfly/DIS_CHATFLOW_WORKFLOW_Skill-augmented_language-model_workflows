@@ -1,0 +1,4 @@
+source_file,formulation_group,formulation_label,drug_label,replicate_file_id,include_for_fig5b,model_display_name,notes
+0417-紫外亚甲蓝-标准粘度.xlsx,Standard,Standard viscosity,methylene_blue,standard_excel_1,yes,Standard,dummy validation file
+0426-紫外-亚甲蓝-GPTs.xlsx,GPT-5-mini,GPT-5-mini optimized,methylene_blue,gpt5mini_excel_1,yes,GPT-5-mini,dummy validation file
+0427-紫外-亚甲蓝-Gemini.xlsx,Gemini 2.5 Flash,Gemini 2.5 Flash optimized,methylene_blue,gemini25flash_excel_1,yes,Gemini 2.5 Flash,dummy validation file

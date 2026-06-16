@@ -1,0 +1,9 @@
+﻿group_type,group_value,file_count,supported_count,unsupported_count,verdict_same_count,verdict_different_count,verdict_unknown_count,avg_experiment_completeness_pct,avg_dimension_coverage_pct,avg_dimension_detail_score_pct,avg_mechanism_score_pct,avg_reasoning_score_pct,avg_structural_completeness_pct,avg_overall_quality_score_pct,comparison_table_rate_pct,reference_trace_rate_pct,placeholder_reference_rate_pct,repeat_group_count,complete_repeat_group_count,consistent_repeat_group_count,inconsistent_repeat_group_count,potential_false_positive_count,potential_false_negative_count,repeat_consistency_rate_pct,bert_scored_count,avg_bert_f1_pct
+OVERALL,ALL,12,12,0,11,1,0,0.0,100.0,55.0,0.0,0.0,50.0,35.75,0.0,0.0,0.0,4,4,3,1,0,1,75.0,0,0.0
+MODEL_BUCKET,ChatGPT,12,12,0,11,1,0,0.0,100.0,55.0,0.0,0.0,50.0,35.75,0.0,0.0,0.0,4,4,3,1,0,1,75.0,0,0.0
+DRUG,硝苯地平控释片30mg,12,12,0,11,1,0,0.0,100.0,55.0,0.0,0.0,50.0,35.75,0.0,0.0,0.0,4,4,3,1,0,1,75.0,0,0.0
+MANUFACTURER_PAIR,拜新同 vs 久保平,3,3,0,2,1,0,0.0,100.0,55.0,0.0,0.0,50.0,35.75,0.0,0.0,0.0,1,1,0,1,0,1,0.0,0,0.0
+MANUFACTURER_PAIR,拜新同 vs 奈特,3,3,0,3,0,0,0.0,100.0,55.0,0.0,0.0,50.0,35.75,0.0,0.0,0.0,1,1,1,0,0,0,100.0,0,0.0
+MANUFACTURER_PAIR,拜新同 vs 易释,3,3,0,3,0,0,0.0,100.0,55.0,0.0,0.0,50.0,35.75,0.0,0.0,0.0,1,1,1,0,0,0,100.0,0,0.0
+MANUFACTURER_PAIR,拜新同 vs 欣适平,3,3,0,3,0,0,0.0,100.0,55.0,0.0,0.0,50.0,35.75,0.0,0.0,0.0,1,1,1,0,0,0,100.0,0,0.0
+FORMAT,.md,12,12,0,11,1,0,0.0,100.0,55.0,0.0,0.0,50.0,35.75,0.0,0.0,0.0,0,0,0,0,0,0,0.0,0,0.0

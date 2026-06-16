@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the associated manuscript."
+title: "DIS-TOMO-MYGO: skill-assisted language-model workflows for disintegration visualization analysis and formulation optimization"
+authors:
+  - family-names: "TBD"
+    given-names: "TBD"
+version: "0.1.0"
+date-released: "2026-06-16"
+type: software

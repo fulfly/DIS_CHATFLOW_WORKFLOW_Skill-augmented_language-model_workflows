@@ -1,0 +1,13 @@
+formulation_group,replicate_id,k4m_amount,k100lv_amount,k4m_k100lv_ratio,source_formulation_group,relative_k4m_fraction,relative_k4m_fraction_formula,denominator_k4m_plus_k100lv,provided_k4m_k100lv_ratio,provided_ratio_matches_fraction
+Standard,std_1,2.5,2.8,,Standard,0.4716981132075472,K4M / (K4M + K100LV),5.3,,False
+Standard,std_2,2.5,2.8,,Standard,0.4716981132075472,K4M / (K4M + K100LV),5.3,,False
+Standard,std_3,2.5,2.8,,Standard,0.4716981132075472,K4M / (K4M + K100LV),5.3,,False
+GPT-5.4,gpt_1,2.052,3.2688,,gpt-5.4,0.38565629228687415,K4M / (K4M + K100LV),5.3208,,False
+GPT-5.4,gpt_2,2.05,3.27,,gpt-5.4,0.3853383458646616,K4M / (K4M + K100LV),5.32,,False
+GPT-5.4,gpt_3,2.054,3.264,,gpt-5.4,0.3862354268522001,K4M / (K4M + K100LV),5.318,,False
+qwen3.6-plus,qwen_1,2.1,3.22,,qwen3.6-plus,0.39473684210526316,K4M / (K4M + K100LV),5.32,,False
+qwen3.6-plus,qwen_2,2.35,2.9708,,qwen3.6-plus,0.4416629078334085,K4M / (K4M + K100LV),5.3208,,False
+qwen3.6-plus,qwen_3,2.1,3.2208,,qwen3.6-plus,0.39467749210645015,K4M / (K4M + K100LV),5.3208,,False
+Gemini 2.5 Flash,gemini_1,2.3284,2.9924,,Gemini 2.5 Flash,0.43760336791459925,K4M / (K4M + K100LV),5.3208,,False
+Gemini 2.5 Flash,gemini_2,2.3785,2.9423,,Gemini 2.6 Flash,0.4470192452262817,K4M / (K4M + K100LV),5.3208,,False
+Gemini 2.5 Flash,gemini_3,2.0641,3.2536,,Gemini 2.7 Flash,0.3881565338398179,K4M / (K4M + K100LV),5.3177,,False

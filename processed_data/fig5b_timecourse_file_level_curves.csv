@@ -1,0 +1,105 @@
+source_file,formulation_group,formulation_label,drug_label,replicate_file_id,time_h,uv_signal,n_technical_measurements,y_variable,baseline_added_for_plot
+0523-紫外-亚甲蓝-GPTS.xlsx,GPT-5-mini,GPT-5-mini optimized,methylene_blue,0523-紫外-亚甲蓝-GPTS,0.0,0.0,3,absorbance,True
+0523-紫外-亚甲蓝-GPTS.xlsx,GPT-5-mini,GPT-5-mini optimized,methylene_blue,0523-紫外-亚甲蓝-GPTS,0.5,0.12033333333333333,3,absorbance,False
+0523-紫外-亚甲蓝-GPTS.xlsx,GPT-5-mini,GPT-5-mini optimized,methylene_blue,0523-紫外-亚甲蓝-GPTS,1.0,0.129,3,absorbance,False
+0523-紫外-亚甲蓝-GPTS.xlsx,GPT-5-mini,GPT-5-mini optimized,methylene_blue,0523-紫外-亚甲蓝-GPTS,2.0,0.24133333333333332,3,absorbance,False
+0523-紫外-亚甲蓝-GPTS.xlsx,GPT-5-mini,GPT-5-mini optimized,methylene_blue,0523-紫外-亚甲蓝-GPTS,4.0,0.5413333333333333,3,absorbance,False
+0523-紫外-亚甲蓝-GPTS.xlsx,GPT-5-mini,GPT-5-mini optimized,methylene_blue,0523-紫外-亚甲蓝-GPTS,6.0,0.32233333333333336,3,absorbance,False
+0523-紫外-亚甲蓝-GPTS.xlsx,GPT-5-mini,GPT-5-mini optimized,methylene_blue,0523-紫外-亚甲蓝-GPTS,8.0,0.02666666666666667,3,absorbance,False
+0524-紫外-亚甲蓝-GPTS.xlsx,GPT-5-mini,GPT-5-mini optimized,methylene_blue,0524-紫外-亚甲蓝-GPTS,0.0,0.0,3,absorbance,True
+0524-紫外-亚甲蓝-GPTS.xlsx,GPT-5-mini,GPT-5-mini optimized,methylene_blue,0524-紫外-亚甲蓝-GPTS,0.5,0.2383333333333333,3,absorbance,False
+0524-紫外-亚甲蓝-GPTS.xlsx,GPT-5-mini,GPT-5-mini optimized,methylene_blue,0524-紫外-亚甲蓝-GPTS,1.0,0.19966666666666666,3,absorbance,False
+0524-紫外-亚甲蓝-GPTS.xlsx,GPT-5-mini,GPT-5-mini optimized,methylene_blue,0524-紫外-亚甲蓝-GPTS,2.0,0.3133333333333333,3,absorbance,False
+0524-紫外-亚甲蓝-GPTS.xlsx,GPT-5-mini,GPT-5-mini optimized,methylene_blue,0524-紫外-亚甲蓝-GPTS,4.0,0.5823333333333333,3,absorbance,False
+0524-紫外-亚甲蓝-GPTS.xlsx,GPT-5-mini,GPT-5-mini optimized,methylene_blue,0524-紫外-亚甲蓝-GPTS,6.0,0.317,3,absorbance,False
+0524-紫外-亚甲蓝-GPTS.xlsx,GPT-5-mini,GPT-5-mini optimized,methylene_blue,0524-紫外-亚甲蓝-GPTS,8.0,0.015,3,absorbance,False
+0426-紫外-亚甲蓝-GPTs.xlsx,GPT-5-mini,GPT-5-mini optimized,methylene_blue,gpt5mini_excel_1,0.0,0.0,3,absorbance,True
+0426-紫外-亚甲蓝-GPTs.xlsx,GPT-5-mini,GPT-5-mini optimized,methylene_blue,gpt5mini_excel_1,0.5,0.002,3,absorbance,False
+0426-紫外-亚甲蓝-GPTs.xlsx,GPT-5-mini,GPT-5-mini optimized,methylene_blue,gpt5mini_excel_1,1.0,0.017666666666666667,3,absorbance,False
+0426-紫外-亚甲蓝-GPTs.xlsx,GPT-5-mini,GPT-5-mini optimized,methylene_blue,gpt5mini_excel_1,2.0,0.16866666666666666,3,absorbance,False
+0426-紫外-亚甲蓝-GPTs.xlsx,GPT-5-mini,GPT-5-mini optimized,methylene_blue,gpt5mini_excel_1,4.0,0.6463333333333333,3,absorbance,False
+0426-紫外-亚甲蓝-GPTs.xlsx,GPT-5-mini,GPT-5-mini optimized,methylene_blue,gpt5mini_excel_1,6.0,0.3906666666666667,3,absorbance,False
+0426-紫外-亚甲蓝-GPTs.xlsx,GPT-5-mini,GPT-5-mini optimized,methylene_blue,gpt5mini_excel_1,8.0,0.028999999999999998,3,absorbance,False
+0426-紫外-亚甲蓝-GPTs.xlsx,GPT-5-mini,GPT-5-mini optimized,methylene_blue,gpt5mini_excel_1,12.0,0.018000000000000002,3,absorbance,False
+0426-紫外-亚甲蓝-GPTs.xlsx,GPT-5-mini,GPT-5-mini optimized,methylene_blue,gpt5mini_excel_1,16.0,0.0013333333333333333,3,absorbance,False
+0426-紫外-亚甲蓝-GPTs.xlsx,GPT-5-mini,GPT-5-mini optimized,methylene_blue,gpt5mini_excel_1,20.0,0.006999999999999999,3,absorbance,False
+0426-紫外-亚甲蓝-GPTs.xlsx,GPT-5-mini,GPT-5-mini optimized,methylene_blue,gpt5mini_excel_1,24.0,0.0036666666666666666,3,absorbance,False
+0524-紫外-亚甲蓝-Gemini.xlsx,Gemini 2.5 Flash,Gemini 2.5 Flash optimized,methylene_blue,0524-紫外-亚甲蓝-Gemini,0.0,0.0,3,absorbance,True
+0524-紫外-亚甲蓝-Gemini.xlsx,Gemini 2.5 Flash,Gemini 2.5 Flash optimized,methylene_blue,0524-紫外-亚甲蓝-Gemini,0.5,0.20166666666666666,3,absorbance,False
+0524-紫外-亚甲蓝-Gemini.xlsx,Gemini 2.5 Flash,Gemini 2.5 Flash optimized,methylene_blue,0524-紫外-亚甲蓝-Gemini,1.0,0.3453333333333333,3,absorbance,False
+0524-紫外-亚甲蓝-Gemini.xlsx,Gemini 2.5 Flash,Gemini 2.5 Flash optimized,methylene_blue,0524-紫外-亚甲蓝-Gemini,2.0,0.3,3,absorbance,False
+0524-紫外-亚甲蓝-Gemini.xlsx,Gemini 2.5 Flash,Gemini 2.5 Flash optimized,methylene_blue,0524-紫外-亚甲蓝-Gemini,4.0,0.5926666666666667,3,absorbance,False
+0524-紫外-亚甲蓝-Gemini.xlsx,Gemini 2.5 Flash,Gemini 2.5 Flash optimized,methylene_blue,0524-紫外-亚甲蓝-Gemini,6.0,0.37266666666666665,3,absorbance,False
+0524-紫外-亚甲蓝-Gemini.xlsx,Gemini 2.5 Flash,Gemini 2.5 Flash optimized,methylene_blue,0524-紫外-亚甲蓝-Gemini,8.0,0.039,3,absorbance,False
+0525-紫外-亚甲蓝-Gemini.xlsx,Gemini 2.5 Flash,Gemini 2.5 Flash optimized,methylene_blue,0525-紫外-亚甲蓝-Gemini,0.0,0.0,3,absorbance,True
+0525-紫外-亚甲蓝-Gemini.xlsx,Gemini 2.5 Flash,Gemini 2.5 Flash optimized,methylene_blue,0525-紫外-亚甲蓝-Gemini,0.5,0.3016666666666667,3,absorbance,False
+0525-紫外-亚甲蓝-Gemini.xlsx,Gemini 2.5 Flash,Gemini 2.5 Flash optimized,methylene_blue,0525-紫外-亚甲蓝-Gemini,1.0,0.18266666666666667,3,absorbance,False
+0525-紫外-亚甲蓝-Gemini.xlsx,Gemini 2.5 Flash,Gemini 2.5 Flash optimized,methylene_blue,0525-紫外-亚甲蓝-Gemini,2.0,0.242,3,absorbance,False
+0525-紫外-亚甲蓝-Gemini.xlsx,Gemini 2.5 Flash,Gemini 2.5 Flash optimized,methylene_blue,0525-紫外-亚甲蓝-Gemini,4.0,0.49,3,absorbance,False
+0525-紫外-亚甲蓝-Gemini.xlsx,Gemini 2.5 Flash,Gemini 2.5 Flash optimized,methylene_blue,0525-紫外-亚甲蓝-Gemini,6.0,0.27,3,absorbance,False
+0525-紫外-亚甲蓝-Gemini.xlsx,Gemini 2.5 Flash,Gemini 2.5 Flash optimized,methylene_blue,0525-紫外-亚甲蓝-Gemini,8.0,0.027999999999999997,3,absorbance,False
+0427-紫外-亚甲蓝-Gemini.xlsx,Gemini 2.5 Flash,Gemini 2.5 Flash optimized,methylene_blue,gemini25flash_excel_1,0.0,0.0,3,absorbance,True
+0427-紫外-亚甲蓝-Gemini.xlsx,Gemini 2.5 Flash,Gemini 2.5 Flash optimized,methylene_blue,gemini25flash_excel_1,0.5,0.057666666666666665,3,absorbance,False
+0427-紫外-亚甲蓝-Gemini.xlsx,Gemini 2.5 Flash,Gemini 2.5 Flash optimized,methylene_blue,gemini25flash_excel_1,1.0,0.07833333333333332,3,absorbance,False
+0427-紫外-亚甲蓝-Gemini.xlsx,Gemini 2.5 Flash,Gemini 2.5 Flash optimized,methylene_blue,gemini25flash_excel_1,2.0,0.2373333333333333,3,absorbance,False
+0427-紫外-亚甲蓝-Gemini.xlsx,Gemini 2.5 Flash,Gemini 2.5 Flash optimized,methylene_blue,gemini25flash_excel_1,4.0,0.6046666666666667,3,absorbance,False
+0427-紫外-亚甲蓝-Gemini.xlsx,Gemini 2.5 Flash,Gemini 2.5 Flash optimized,methylene_blue,gemini25flash_excel_1,6.0,0.35666666666666663,3,absorbance,False
+0427-紫外-亚甲蓝-Gemini.xlsx,Gemini 2.5 Flash,Gemini 2.5 Flash optimized,methylene_blue,gemini25flash_excel_1,8.0,0.034,3,absorbance,False
+0427-紫外-亚甲蓝-Gemini.xlsx,Gemini 2.5 Flash,Gemini 2.5 Flash optimized,methylene_blue,gemini25flash_excel_1,12.0,0.017666666666666667,3,absorbance,False
+0427-紫外-亚甲蓝-Gemini.xlsx,Gemini 2.5 Flash,Gemini 2.5 Flash optimized,methylene_blue,gemini25flash_excel_1,16.0,0.007333333333333333,3,absorbance,False
+0427-紫外-亚甲蓝-Gemini.xlsx,Gemini 2.5 Flash,Gemini 2.5 Flash optimized,methylene_blue,gemini25flash_excel_1,20.0,0.004666666666666667,3,absorbance,False
+0427-紫外-亚甲蓝-Gemini.xlsx,Gemini 2.5 Flash,Gemini 2.5 Flash optimized,methylene_blue,gemini25flash_excel_1,24.0,0.002,3,absorbance,False
+0428-紫外-亚甲蓝-Qwen.xlsx,Qwen3.6-plus,Qwen3.6-plus optimized,methylene_blue,0428-紫外-亚甲蓝-Qwen,0.0,0.0,3,absorbance,True
+0428-紫外-亚甲蓝-Qwen.xlsx,Qwen3.6-plus,Qwen3.6-plus optimized,methylene_blue,0428-紫外-亚甲蓝-Qwen,0.5,0.07033333333333334,3,absorbance,False
+0428-紫外-亚甲蓝-Qwen.xlsx,Qwen3.6-plus,Qwen3.6-plus optimized,methylene_blue,0428-紫外-亚甲蓝-Qwen,1.0,0.07566666666666666,3,absorbance,False
+0428-紫外-亚甲蓝-Qwen.xlsx,Qwen3.6-plus,Qwen3.6-plus optimized,methylene_blue,0428-紫外-亚甲蓝-Qwen,2.0,0.16066666666666665,3,absorbance,False
+0428-紫外-亚甲蓝-Qwen.xlsx,Qwen3.6-plus,Qwen3.6-plus optimized,methylene_blue,0428-紫外-亚甲蓝-Qwen,4.0,0.49733333333333335,3,absorbance,False
+0428-紫外-亚甲蓝-Qwen.xlsx,Qwen3.6-plus,Qwen3.6-plus optimized,methylene_blue,0428-紫外-亚甲蓝-Qwen,6.0,0.2866666666666666,3,absorbance,False
+0428-紫外-亚甲蓝-Qwen.xlsx,Qwen3.6-plus,Qwen3.6-plus optimized,methylene_blue,0428-紫外-亚甲蓝-Qwen,8.0,0.03933333333333333,3,absorbance,False
+0428-紫外-亚甲蓝-Qwen.xlsx,Qwen3.6-plus,Qwen3.6-plus optimized,methylene_blue,0428-紫外-亚甲蓝-Qwen,12.0,0.012666666666666666,3,absorbance,False
+0428-紫外-亚甲蓝-Qwen.xlsx,Qwen3.6-plus,Qwen3.6-plus optimized,methylene_blue,0428-紫外-亚甲蓝-Qwen,16.0,0.005666666666666667,3,absorbance,False
+0428-紫外-亚甲蓝-Qwen.xlsx,Qwen3.6-plus,Qwen3.6-plus optimized,methylene_blue,0428-紫外-亚甲蓝-Qwen,20.0,0.0006666666666666666,3,absorbance,False
+0428-紫外-亚甲蓝-Qwen.xlsx,Qwen3.6-plus,Qwen3.6-plus optimized,methylene_blue,0428-紫外-亚甲蓝-Qwen,24.0,0.006999999999999999,3,absorbance,False
+0525-紫外-亚甲蓝-Qwen.xlsx,Qwen3.6-plus,Qwen3.6-plus optimized,methylene_blue,0525-紫外-亚甲蓝-Qwen,0.0,0.0,3,absorbance,True
+0525-紫外-亚甲蓝-Qwen.xlsx,Qwen3.6-plus,Qwen3.6-plus optimized,methylene_blue,0525-紫外-亚甲蓝-Qwen,0.5,0.235,3,absorbance,False
+0525-紫外-亚甲蓝-Qwen.xlsx,Qwen3.6-plus,Qwen3.6-plus optimized,methylene_blue,0525-紫外-亚甲蓝-Qwen,1.0,0.17200000000000001,3,absorbance,False
+0525-紫外-亚甲蓝-Qwen.xlsx,Qwen3.6-plus,Qwen3.6-plus optimized,methylene_blue,0525-紫外-亚甲蓝-Qwen,2.0,0.228,3,absorbance,False
+0525-紫外-亚甲蓝-Qwen.xlsx,Qwen3.6-plus,Qwen3.6-plus optimized,methylene_blue,0525-紫外-亚甲蓝-Qwen,4.0,0.46366666666666667,3,absorbance,False
+0525-紫外-亚甲蓝-Qwen.xlsx,Qwen3.6-plus,Qwen3.6-plus optimized,methylene_blue,0525-紫外-亚甲蓝-Qwen,6.0,0.2813333333333333,3,absorbance,False
+0525-紫外-亚甲蓝-Qwen.xlsx,Qwen3.6-plus,Qwen3.6-plus optimized,methylene_blue,0525-紫外-亚甲蓝-Qwen,8.0,0.03666666666666667,3,absorbance,False
+0526-紫外-亚甲蓝-Qwen.xlsx,Qwen3.6-plus,Qwen3.6-plus optimized,methylene_blue,0526-紫外-亚甲蓝-Qwen,0.0,0.0,3,absorbance,True
+0526-紫外-亚甲蓝-Qwen.xlsx,Qwen3.6-plus,Qwen3.6-plus optimized,methylene_blue,0526-紫外-亚甲蓝-Qwen,0.5,0.11066666666666668,3,absorbance,False
+0526-紫外-亚甲蓝-Qwen.xlsx,Qwen3.6-plus,Qwen3.6-plus optimized,methylene_blue,0526-紫外-亚甲蓝-Qwen,1.0,0.12833333333333333,3,absorbance,False
+0526-紫外-亚甲蓝-Qwen.xlsx,Qwen3.6-plus,Qwen3.6-plus optimized,methylene_blue,0526-紫外-亚甲蓝-Qwen,2.0,0.20766666666666667,3,absorbance,False
+0526-紫外-亚甲蓝-Qwen.xlsx,Qwen3.6-plus,Qwen3.6-plus optimized,methylene_blue,0526-紫外-亚甲蓝-Qwen,4.0,0.769,3,absorbance,False
+0526-紫外-亚甲蓝-Qwen.xlsx,Qwen3.6-plus,Qwen3.6-plus optimized,methylene_blue,0526-紫外-亚甲蓝-Qwen,6.0,0.5023333333333334,3,absorbance,False
+0526-紫外-亚甲蓝-Qwen.xlsx,Qwen3.6-plus,Qwen3.6-plus optimized,methylene_blue,0526-紫外-亚甲蓝-Qwen,8.0,0.077,3,absorbance,False
+0417-紫外-亚甲蓝-标准粘度.xlsx,Standard,Standard viscosity,methylene_blue,0417-紫外-亚甲蓝-标准粘度,0.0,0.0,3,absorbance,True
+0417-紫外-亚甲蓝-标准粘度.xlsx,Standard,Standard viscosity,methylene_blue,0417-紫外-亚甲蓝-标准粘度,0.5,0.005333333333333333,3,absorbance,False
+0417-紫外-亚甲蓝-标准粘度.xlsx,Standard,Standard viscosity,methylene_blue,0417-紫外-亚甲蓝-标准粘度,1.0,0.050666666666666665,3,absorbance,False
+0417-紫外-亚甲蓝-标准粘度.xlsx,Standard,Standard viscosity,methylene_blue,0417-紫外-亚甲蓝-标准粘度,2.0,0.138,3,absorbance,False
+0417-紫外-亚甲蓝-标准粘度.xlsx,Standard,Standard viscosity,methylene_blue,0417-紫外-亚甲蓝-标准粘度,4.0,0.448,3,absorbance,False
+0417-紫外-亚甲蓝-标准粘度.xlsx,Standard,Standard viscosity,methylene_blue,0417-紫外-亚甲蓝-标准粘度,6.0,0.254,3,absorbance,False
+0417-紫外-亚甲蓝-标准粘度.xlsx,Standard,Standard viscosity,methylene_blue,0417-紫外-亚甲蓝-标准粘度,8.0,0.043666666666666666,3,absorbance,False
+0417-紫外-亚甲蓝-标准粘度.xlsx,Standard,Standard viscosity,methylene_blue,0417-紫外-亚甲蓝-标准粘度,12.0,0.018666666666666668,3,absorbance,False
+0417-紫外-亚甲蓝-标准粘度.xlsx,Standard,Standard viscosity,methylene_blue,0417-紫外-亚甲蓝-标准粘度,16.0,0.008666666666666666,3,absorbance,False
+0417-紫外-亚甲蓝-标准粘度.xlsx,Standard,Standard viscosity,methylene_blue,0417-紫外-亚甲蓝-标准粘度,20.0,0.007333333333333333,3,absorbance,False
+0417-紫外-亚甲蓝-标准粘度.xlsx,Standard,Standard viscosity,methylene_blue,0417-紫外-亚甲蓝-标准粘度,24.0,0.004666666666666667,3,absorbance,False
+0421-紫外-亚甲蓝-标准粘度.xlsx,Standard,Standard viscosity,methylene_blue,0421-紫外-亚甲蓝-标准粘度,0.0,0.0,3,absorbance,True
+0421-紫外-亚甲蓝-标准粘度.xlsx,Standard,Standard viscosity,methylene_blue,0421-紫外-亚甲蓝-标准粘度,0.5,0.032,3,absorbance,False
+0421-紫外-亚甲蓝-标准粘度.xlsx,Standard,Standard viscosity,methylene_blue,0421-紫外-亚甲蓝-标准粘度,1.0,0.052,3,absorbance,False
+0421-紫外-亚甲蓝-标准粘度.xlsx,Standard,Standard viscosity,methylene_blue,0421-紫外-亚甲蓝-标准粘度,2.0,0.168,3,absorbance,False
+0421-紫外-亚甲蓝-标准粘度.xlsx,Standard,Standard viscosity,methylene_blue,0421-紫外-亚甲蓝-标准粘度,4.0,0.5153333333333333,3,absorbance,False
+0421-紫外-亚甲蓝-标准粘度.xlsx,Standard,Standard viscosity,methylene_blue,0421-紫外-亚甲蓝-标准粘度,6.0,0.553,3,absorbance,False
+0421-紫外-亚甲蓝-标准粘度.xlsx,Standard,Standard viscosity,methylene_blue,0421-紫外-亚甲蓝-标准粘度,8.0,0.07766666666666666,3,absorbance,False
+0421-紫外-亚甲蓝-标准粘度.xlsx,Standard,Standard viscosity,methylene_blue,0421-紫外-亚甲蓝-标准粘度,12.0,0.016666666666666666,3,absorbance,False
+0421-紫外-亚甲蓝-标准粘度.xlsx,Standard,Standard viscosity,methylene_blue,0421-紫外-亚甲蓝-标准粘度,16.0,0.014333333333333332,3,absorbance,False
+0421-紫外-亚甲蓝-标准粘度.xlsx,Standard,Standard viscosity,methylene_blue,0421-紫外-亚甲蓝-标准粘度,20.0,0.004333333333333333,3,absorbance,False
+0421-紫外-亚甲蓝-标准粘度.xlsx,Standard,Standard viscosity,methylene_blue,0421-紫外-亚甲蓝-标准粘度,24.0,-0.0013333333333333333,3,absorbance,False
+0520-紫外-亚甲蓝-标准粘度.xlsx,Standard,Standard viscosity,methylene_blue,0520-紫外-亚甲蓝-标准粘度,0.0,0.0,3,absorbance,True
+0520-紫外-亚甲蓝-标准粘度.xlsx,Standard,Standard viscosity,methylene_blue,0520-紫外-亚甲蓝-标准粘度,0.5,0.005666666666666667,3,absorbance,False
+0520-紫外-亚甲蓝-标准粘度.xlsx,Standard,Standard viscosity,methylene_blue,0520-紫外-亚甲蓝-标准粘度,1.0,0.03266666666666667,3,absorbance,False
+0520-紫外-亚甲蓝-标准粘度.xlsx,Standard,Standard viscosity,methylene_blue,0520-紫外-亚甲蓝-标准粘度,2.0,0.151,3,absorbance,False
+0520-紫外-亚甲蓝-标准粘度.xlsx,Standard,Standard viscosity,methylene_blue,0520-紫外-亚甲蓝-标准粘度,4.0,0.4386666666666667,3,absorbance,False
+0520-紫外-亚甲蓝-标准粘度.xlsx,Standard,Standard viscosity,methylene_blue,0520-紫外-亚甲蓝-标准粘度,6.0,0.25633333333333336,3,absorbance,False
+0520-紫外-亚甲蓝-标准粘度.xlsx,Standard,Standard viscosity,methylene_blue,0520-紫外-亚甲蓝-标准粘度,8.0,0.015333333333333332,3,absorbance,False

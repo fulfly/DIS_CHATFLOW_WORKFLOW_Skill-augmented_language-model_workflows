@@ -1,0 +1,13 @@
+source_file,formulation_group,formulation_label,drug_label,replicate_file_id,AUC_0_4h_mean_curve,AUC_0_8h_mean_curve,relative_early_release_mean_curve,baseline_added,interpolation_used_4h,interpolation_used_8h,excluded_reason,n_measurements,technical_sd_relative_early_release,relative_early_release_definition
+0417-紫外-亚甲蓝-标准粘度.xlsx,Standard,Standard viscosity,methylene_blue,0417-紫外-亚甲蓝-标准粘度,0.6956666666666668,1.6953333333333336,0.4103421156114825,True,False,False,,3,0.0014111432992678,AUC_0_4h / AUC_0_8h
+0421-紫外-亚甲蓝-标准粘度.xlsx,Standard,Standard viscosity,methylene_blue,0421-紫外-亚甲蓝-标准粘度,0.8223333333333334,2.5213333333333336,0.3261501850872554,True,False,False,,3,0.001419808481057,AUC_0_4h / AUC_0_8h
+0426-紫外-亚甲蓝-GPTs.xlsx,GPT-5-mini,GPT-5-mini optimized,methylene_blue,gpt5mini_excel_1,0.9135833333333332,2.37025,0.385437541750167,True,False,False,,3,0.0021157319010073,AUC_0_4h / AUC_0_8h
+0427-紫外-亚甲蓝-Gemini.xlsx,Gemini 2.5 Flash,Gemini 2.5 Flash optimized,methylene_blue,gemini25flash_excel_1,1.04825,2.40025,0.4367253411103009,True,False,False,,3,0.0010260320836672,AUC_0_4h / AUC_0_8h
+0428-紫外-亚甲蓝-Qwen.xlsx,Qwen3.6-plus,Qwen3.6-plus optimized,methylene_blue,0428-紫外-亚甲蓝-Qwen,0.83025,1.9402500000000005,0.4279087746424429,True,False,False,,3,0.0005560505692585,AUC_0_4h / AUC_0_8h
+0520-紫外-亚甲蓝-标准粘度.xlsx,Standard,Standard viscosity,methylene_blue,0520-紫外-亚甲蓝-标准粘度,0.6925,1.659166666666667,0.4173782019085886,True,False,False,,3,0.0006062785090758,AUC_0_4h / AUC_0_8h
+0523-紫外-亚甲蓝-GPTS.xlsx,GPT-5-mini,GPT-5-mini optimized,methylene_blue,0523-紫外-亚甲蓝-GPTS,1.06025,2.2729166666666667,0.4664711274060494,True,False,False,,3,0.005632857995895,AUC_0_4h / AUC_0_8h
+0524-紫外-亚甲蓝-GPTS.xlsx,GPT-5-mini,GPT-5-mini optimized,methylene_blue,0524-紫外-亚甲蓝-GPTS,1.3212499999999998,2.5525833333333328,0.5176128758447325,True,False,False,,3,0.0013036924519224,AUC_0_4h / AUC_0_8h
+0524-紫外-亚甲蓝-Gemini.xlsx,Gemini 2.5 Flash,Gemini 2.5 Flash optimized,methylene_blue,0524-紫外-亚甲蓝-Gemini,1.4025,2.7795,0.5045871559633027,True,False,False,,3,0.0399187847513778,AUC_0_4h / AUC_0_8h
+0525-紫外-亚甲蓝-Gemini.xlsx,Gemini 2.5 Flash,Gemini 2.5 Flash optimized,methylene_blue,0525-紫外-亚甲蓝-Gemini,1.1408333333333334,2.1988333333333334,0.5188357462290608,True,False,False,,3,0.0005552996187474,AUC_0_4h / AUC_0_8h
+0525-紫外-亚甲蓝-Qwen.xlsx,Qwen3.6-plus,Qwen3.6-plus optimized,methylene_blue,0525-紫外-亚甲蓝-Qwen,1.0521666666666667,2.115166666666666,0.4974391300921913,True,False,False,,3,0.000186528807047,AUC_0_4h / AUC_0_8h
+0526-紫外-亚甲蓝-Qwen.xlsx,Qwen3.6-plus,Qwen3.6-plus optimized,methylene_blue,0526-紫外-亚甲蓝-Qwen,1.2320833333333332,3.08275,0.3996702078771659,True,False,False,,3,0.0015008152562985,AUC_0_4h / AUC_0_8h

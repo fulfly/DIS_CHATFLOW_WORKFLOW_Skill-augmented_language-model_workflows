@@ -1,0 +1,13 @@
+model,comparison_id,run_id_1,run_id_2,pairwise_similarity,similarity_method
+gpt-5-mini,run1_vs_run2,run1,run2,0.94,dummy_semantic_similarity
+gpt-5-mini,run1_vs_run3,run1,run3,0.93,dummy_semantic_similarity
+gpt-5-mini,run2_vs_run3,run2,run3,0.95,dummy_semantic_similarity
+qwen3.6-plus,run1_vs_run2,run1,run2,0.89,dummy_semantic_similarity
+qwen3.6-plus,run1_vs_run3,run1,run3,0.9,dummy_semantic_similarity
+qwen3.6-plus,run2_vs_run3,run2,run3,0.88,dummy_semantic_similarity
+glm-4.6v,run1_vs_run2,run1,run2,0.84,dummy_semantic_similarity
+glm-4.6v,run1_vs_run3,run1,run3,0.82,dummy_semantic_similarity
+glm-4.6v,run2_vs_run3,run2,run3,0.85,dummy_semantic_similarity
+kimi-k2.5,run1_vs_run2,run1,run2,0.8,dummy_semantic_similarity
+kimi-k2.5,run1_vs_run3,run1,run3,0.79,dummy_semantic_similarity
+kimi-k2.5,run2_vs_run3,run2,run3,0.81,dummy_semantic_similarity

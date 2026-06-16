@@ -1,0 +1,6 @@
+model,model_order,source_model_names,display_type,n_source_rows,aggregation_weight_column,aggregation_weight_sum,aggregation_method,plotted_value,avg_overall_quality_score_source_column,avg_overall_quality_score_source_values,row_excluded,panel
+GPT-5.5,0.0,ChatGPT,bar,1,mapped_model_label_count,48.0,single source row,84.94,avg_overall_quality_score_pct,84.94,False,c
+Qwen3.6-plus,1.0,Qwen,bar,1,mapped_model_label_count,45.0,single source row,18.51,avg_overall_quality_score_pct,18.51,False,c
+GLM-4.6V,2.0,GLM,bar,1,mapped_model_label_count,45.0,single source row,32.53,avg_overall_quality_score_pct,32.53,False,c
+Kimi-K2.5,3.0,Kimi,bar,1,mapped_model_label_count,35.0,single source row,25.23,avg_overall_quality_score_pct,25.23,False,c
+DIS GPT,,DIS GPT,horizontal dashed reference line,1,mapped_model_label_count,,DIS GPT benchmark from quality.xlsx,29.92,avg_overall_quality_score_pct,29.92,False,c

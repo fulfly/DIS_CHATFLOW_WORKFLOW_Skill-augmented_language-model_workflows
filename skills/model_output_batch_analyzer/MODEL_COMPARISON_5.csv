@@ -1,0 +1,6 @@
+﻿model_bucket,file_count,supported_count,mapped_model_label_count,avg_overall_quality_score_pct,avg_dimension_coverage_pct,avg_mechanism_score_pct,avg_reasoning_score_pct,avg_experiment_completeness_pct,verdict_same_rate_pct,placeholder_reference_rate_pct,avg_comparison_table_rows,repeat_group_count,complete_repeat_group_count,consistent_repeat_group_count,inconsistent_repeat_group_count,potential_false_positive_count,potential_false_negative_count,repeat_consistency_rate_pct,bert_scored_count,avg_bert_precision_pct,avg_bert_recall_pct,avg_bert_f1_pct,quality_rank
+GLM,45,45,45,32.53,93.06,0.0,3.85,0.0,17.78,0.0,0.36,16,13,3,3,0,0,50.0,0,0.0,0.0,0.0,1
+Kimi,35,35,35,25.23,63.57,4.37,0.9,4.76,25.71,5.71,0.0,16,6,2,4,2,1,33.33,0,0.0,0.0,0.0,2
+Qwen,45,45,45,18.51,47.22,0.0,0.0,0.0,35.56,0.0,0.0,15,15,3,12,8,4,20.0,0,0.0,0.0,0.0,3
+ChatGPT,48,48,48,84.94,100.0,30.19,83.64,89.58,91.67,95.83,6.23,16,0,0,0,0,0,0.0,0,0.0,0.0,0.0,4
+DIS GPT,16,16,16,29.92,98.44,0.0,0.0,0.0,0.0,0.0,0.0,0,0,0,0,0,0,0.0,0,0.0,0.0,0.0,5
