@@ -1,90 +1,124 @@
-# Repository Audit Report
+﻿# Repository audit report
 
-Repository: `D:\data_github\DIS-TOMO-MYGO`
-Generated: 2026-06-16 11:34:38 +08:00
+Updated: 2026-06-16 12:57:43 +08:00
+
+Repository inspected: `D:\data_github\DIS-TOMO-MYGO`
 
 ## Summary
 
-| Check | Result | Count | Notes |
-|---|---:|---:|---|
-| Secret-like strings | PASS | 0 | Text and DOCX XML scanned; matches report filenames only. |
-| Temporary Office files | PASS | 0 | Pattern `~$*`. |
-| Personal absolute paths | REVIEW | 22 | Manifest intentionally preserves original paths; review before public upload. |
-| Copyright/full-text literature risk | PASS | 27 | Includes removed converted Markdown/cache entries as info. |
-| Unexpectedly large files | PASS | 0 | Threshold: >10 MB review, >50 MB blocker. |
-| Manifest listed files exist | PASS | 0 | See `manifest_integrity_check.csv`. |
-| Major README files | PASS | 0 | Required README coverage. |
-| Minimum expected areas | REVIEW | 1 | Workflow DSL is still missing/redaction-gated. |
-| GitHub-friendly filenames | PASS | 0 | Stable English/ASCII/path-length review. |
+- Repository files: 489
+- Repository size: 109.73 MB
+- Manifest rows: 538
+- Manifest integrity issues: 0
+- Minimum expected items found: 21
+- Minimum expected items missing: 3
+- Strict secret-pattern hits in text files: 0
+- Temporary Office files: 0
+- PDFs: 4
+- Files over 10 MB: 4
+- Non-ASCII/problematic filenames: 0
 
-Repository file count: 481
-Repository size: 62.38 MB
-Safety gate for local commit: PASS
+## Large files over 10 MB
 
-## Findings
+- example_data/example_markdown_outputs/skills/methylene_blue/methylene_blue_sustained_release_tablet_disintegration_analysis.doc - 12.5537 MB
+- example_data/example_markdown_outputs/skills/methylene_blue/methylene_blue_sustained-release_tablet_disintegration_analysis_and_optimization.doc - 12.4961 MB
+- example_data/example_markdown_outputs/skills/gliclazide/gliclazide_formulation_disintegration_analysis.doc - 10.9399 MB
+- example_data/example_markdown_outputs/skills/gliclazide/gliclazide_hpmc_disintegration_analysis_and_optimization.doc - 10.9268 MB
 
-### Personal Absolute Paths
-- `docs/README_3.md` (warning)
-- `knowledge_base/markdown_conversion_workflow_31.md` (warning)
-- `knowledge_base/markdown_conversion_workflow_32.md` (warning)
-- `repository_manifest.csv` (manual_review)
-- `scripts/extract_blank_projected_area.py` (warning)
-- `scripts/extract_blank_projected_area_3.py` (warning)
-- `scripts/extract_figure.py` (warning)
-- `scripts/figures_year_.enriched.jsonl.py` (warning)
-- `scripts/patch_chatflow_retries.py` (warning)
-- `scripts/plot_fig3_model_metrics.py` (warning)
-- `scripts/restore_original_chatflow_retries.py` (warning)
-- `skills/model_output_batch_analyzer/OVERALL_REPORT.md` (warning)
-- `skills/model_output_batch_analyzer/OVERALL_REPORT_10.md` (warning)
-- `skills/model_output_batch_analyzer/OVERALL_REPORT_2.md` (warning)
-- `skills/model_output_batch_analyzer/OVERALL_REPORT_3.md` (warning)
-- `skills/model_output_batch_analyzer/OVERALL_REPORT_4.md` (warning)
-- `skills/model_output_batch_analyzer/OVERALL_REPORT_5.md` (warning)
-- `skills/model_output_batch_analyzer/OVERALL_REPORT_6.md` (warning)
-- `skills/model_output_batch_analyzer/OVERALL_REPORT_7.md` (warning)
-- `skills/model_output_batch_analyzer/OVERALL_REPORT_8.md` (warning)
-- `skills/model_output_batch_analyzer/OVERALL_REPORT_9.md` (warning)
-- `skills/model_output_batch_analyzer/SKILL.md` (warning)
+## Secret and credential scan
 
-### Copyright / Full-Text Literature
-No full-text PDF or large/volume-style converted Markdown currently present. Previously staged converted Markdown/cache rows remain documented as removed/skipped in the manifest.
+- No strict secret-pattern hits were found in text-readable files.
 
-### Large Files
-No files above the review threshold.
+Binary Word reports were checked with strict key-pattern regexes during copying; no strict credential matches were found. They still need manual content review before upload because several are large exported dialogues.
 
-### Missing Expected Files
-- `workflows/DIS_chatflow.dsl`: todo_review_or_redact_candidate: Candidate exists in inventory but was not copied because it was excluded, sensitive, large-review, or lower priority.
-- `workflows/TOMO_chatflow.dsl`: todo_review_or_redact_candidate: Candidate exists in inventory but was not copied because it was excluded, sensitive, large-review, or lower priority.
-- `prompts/MYGO/methylene_blue_background_prompt.txt`: todo_missing: No approved source file was found in reviewed inventory.
-- `source_data/fig3_model_metrics.xlsx`: todo_missing: No approved source file was found in reviewed inventory.
-- `source_data/fig5_uv_absorbance.xlsx`: todo_missing: No approved source file was found in reviewed inventory.
-- `validation_data/uv_absorbance_values/methylene_blue_uv_absorbance.csv`: todo_missing: No approved source file was found in reviewed inventory.
-- `validation_data/uv_absorbance_values/gliclazide_uv_absorbance.csv`: todo_missing: No approved source file was found in reviewed inventory.
-- `docs/reproducibility_notes.md`: todo_missing: No approved source file was found in reviewed inventory.
-- `docs/skill_metric_definitions.md`: todo_missing: No approved source file was found in reviewed inventory.
+## Local absolute paths
 
-### README Coverage
-- `README.md`: present
-- `workflows/README.md`: present
-- `prompts/README.md`: present
-- `skills/README.md`: present
-- `scripts/README.md`: present
-- `knowledge_base/README.md`: present
-- `source_data/README.md`: present
-- `processed_data/README.md`: present
-- `validation_data/flowthrough_images/README.md`: present
-- `validation_data/uv_absorbance_values/README.md`: present
-- `example_data/README.md`: present
-- `docs/README.md`: present
+- repository_audit_report.md
+- repository_manifest.csv
+- docs/README_3.md
+- example_data/example_markdown_outputs/chatflow/gliclazide/rep02/transcript.json
+- example_data/example_markdown_outputs/chatflow/gliclazide/rep03/transcript.json
+- example_data/example_markdown_outputs/chatflow/methylene_blue/rep01/transcript.json
+- example_data/example_markdown_outputs/chatflow/methylene_blue/rep02/transcript.json
+- example_data/example_markdown_outputs/chatflow/methylene_blue/rep03/transcript.json
+- knowledge_base/markdown_conversion_workflow_31.md
+- knowledge_base/markdown_conversion_workflow_32.md
+- processed_data/blank_formulation_projected_area_2.csv
+- processed_data/blank_formulation_projected_area_43.csv
+- processed_data/blank_formulation_projected_area_5.csv
+- processed_data/blank_formulation_projected_area_8.csv
+- processed_data/fig5_uv_relative_release_14.csv
+- processed_data/fig5_uv_relative_release_8.csv
+- processed_data/mygo_recommendation_records_17.csv
+- scripts/extract_blank_projected_area.py
+- scripts/extract_blank_projected_area_3.py
+- scripts/extract_figure.py
+- scripts/figures_year_.enriched.jsonl.py
+- scripts/patch_chatflow_retries.py
+- scripts/plot_fig3_model_metrics.py
+- scripts/plot_fig3_model_metrics_2.py
+- scripts/restore_original_chatflow_retries.py
+- scripts/run_dpsk_ocr_batch.py
+- skills/model_output_batch_analyzer/OVERALL_REPORT.md
+- skills/model_output_batch_analyzer/OVERALL_REPORT_10.md
+- skills/model_output_batch_analyzer/OVERALL_REPORT_2.md
+- skills/model_output_batch_analyzer/OVERALL_REPORT_3.md
+- ... plus 10 additional files.
 
-### Filename Friendliness
-All repository filenames are ASCII/GitHub-friendly under the configured checks.
+## Manifest integrity
 
-## Manual Decisions Before GitHub Upload
+- All copied/generated manifest entries match repository files, and every repository file has a manifest entry.
 
-- Redact or regenerate workflow DSL exports before adding `DIS_chatflow.dsl` and `TOMO_chatflow.dsl`; current candidates were sensitive/review-gated.
-- Decide whether `repository_manifest.csv` should preserve absolute local `original_path` values or use anonymized source IDs before public upload.
-- Convert/curate UV validation Excel records into final `methylene_blue_uv_absorbance.csv` and `gliclazide_uv_absorbance.csv` if those public CSVs are required.
-- Add missing OpenFDA mapping, node descriptions, metric definitions, and reproducibility notes if needed for the manuscript package.
-- Review files above 10 MB and decide whether to keep, compress, summarize, or move to release assets/data repository.
+## Missing expected files
+
+- OpenFDA mapping documentation
+- skill metric definitions
+- reproducibility notes
+
+## README coverage
+
+- README.md exists in all requested major directories.
+
+## Filename check
+
+- All repository filenames are ASCII and GitHub-friendly by the current check.
+
+## Manual decisions before GitHub upload
+
+- Decide whether to keep, compress, convert, or sample the four large skill Word dialogue reports over 10 MB.
+- Decide whether to keep skill run-output artifacts inside `skills/model_output_batch_analyzer/` or separate them as examples.
+- Review duplicated documentation/source-data files listed in `repository_curation_review.md`.
+- Decide whether to anonymize original local paths in manifest and audit tables before public release.
+## Missing-File Handling Update
+
+The repository distinguishes true missing files from files covered by existing equivalents. Missing items are recorded in missing_expected_files.csv with importance, likely_required_source_or_file_type, and handling_action fields. TODO rows are recorded in epository_manifest.csv; no synthetic data were created.
+
+- Missing essential items: 0
+- Missing recommended items: 3
+- Missing optional items: 3
+- Found-equivalent items needing naming/source review: 2
+## Supplemental Source Update
+
+Supplemental sources were integrated without modifying original project files. Gliclazide UV validation spreadsheets were copied from the approved UV output folder; workflow node descriptions and OpenFDA field mapping were generated from approved source documents/code; and the Dify batch runner was copied as a sanitized public script using environment-variable configuration.
+
+- Added gliclazide UV spreadsheets: 18
+- Added generated workflow node document: workflows/node_descriptions.md
+- Added generated OpenFDA mapping document: knowledge_base/openfda_field_mapping.md
+- Added sanitized batch runner: scripts/run_dis_chatflow_batch.py
+- Removed empty/placeholder-only staging folders: example_data/example_uv_data and validation_data/flowthrough_images when no real files were present
+- Missing essential items after update: 0
+- Missing recommended items after update: 3
+- Missing optional items after update: 3
+- Found-equivalent items needing naming/source review: 2
+## Final Recommended Items Update
+
+The remaining recommended documentation and sampled flow-through validation images were added from approved sources.
+
+- Added docs/skill_metric_definitions.md from model-output-batch-analyzer/README.md.
+- Added docs/reproducibility_notes.md from repository context and user-provided public-data scope.
+- Added 15 sampled methylene-blue flow-through validation images under alidation_data/flowthrough_images/.
+- Missing essential items after update: 0
+- Missing recommended items after update: 0
+- Missing optional items after update: 3
+- Found-equivalent items needing naming/source review: 2
+
