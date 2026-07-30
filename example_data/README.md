@@ -8,6 +8,7 @@ This directory contains small public examples for understanding the workflow inp
 - `example_markdown_outputs/chatflow/`: Chatflow replicate outputs for gliclazide and methylene-blue formulation optimization.
 - `example_markdown_outputs/gemini/`: Gemini formulation-optimization report outputs.
 - `example_markdown_outputs/skills/`: skill-assisted formulation-optimization conversation/report exports.
+- `example_markdown_outputs/chatflow/methylene_blue/supplementary_target_response/`: supplementary 90%/110% target-response runs and original-versus-adapted Chatflow control outputs, with source checksums and public-safety transformations documented.
 
 ## Scope Limits
 

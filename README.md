@@ -28,6 +28,10 @@ The repository intentionally contains public example/sampled data rather than th
 3. Use `requirements.txt` for the top-level Python dependency set.
 4. Import the workflow DSL files from `workflows/` into Dify or inspect `workflows/node_descriptions.md` for a human-readable workflow map.
 
+## Supplementary Model Evaluation
+
+The methylene-blue target-responsiveness and workflow-control outputs are indexed at `example_data/example_markdown_outputs/chatflow/methylene_blue/supplementary_target_response/README.md`. Run-level recommendations, metadata, and the original-versus-adapted Chatflow comparison are available under `processed_data/`.
+
 ## Safety Notes
 
 Do not add API keys, Dify/OpenAI/Gemini/Qwen/Kimi keys, private account logs, raw database storage, copyrighted full-text papers, or unreleased full image/video datasets to this repository.

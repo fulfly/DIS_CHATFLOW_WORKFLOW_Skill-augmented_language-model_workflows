@@ -109,6 +109,14 @@ Skill modules are provided under:
 
 These files document the workflow design and can be inspected or re-imported into compatible tooling. API-backed execution requires the user to configure their own credentials and local data paths.
 
+## Supplementary Target-Response Evaluation
+
+The supplementary methylene-blue target-response and workflow-control archive starts at:
+
+- `example_data/example_markdown_outputs/chatflow/methylene_blue/supplementary_target_response/README.md`
+
+Machine-readable recommendation, run-metadata, and workflow-comparison tables are stored in `processed_data/`. The accompanying `source_checksums.csv` distinguishes byte-identical copies from public-safe derivatives. Public transcripts retain prompts and model answers but exclude private local paths and transient signed download URLs.
+
 ## Environment Variables For Batch Chatflow Execution
 
 The public batch runner avoids hard-coded credentials and local paths. Configure these variables before running:
